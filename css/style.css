@@ -1,10 +1,52 @@
 @charset "utf-8";
-html {
-    font-size: 100%;
-}
+    html {
+        font-size: 100%;
+    }
 
-body {
-    background-color: #FAFCFD;
-    font-family:'メイリオ', 'Meiryo', sans-serif;
-    color: #707070;
-}
+    body {
+        background-color: #FAFCFD;
+        font-family:'メイリオ', 'Meiryo', sans-serif;
+        color: #707070;
+    }
+
+/* header1 */
+    .header1 {
+        position: relative;
+        width: 100%;
+        height: 203px;
+        background: #99D3DF;
+    }
+
+    .header1_svg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 69px;
+        fill: #FAFCFD;
+    }
+
+    .header1_container {
+        display: flex;
+        width: 100%;
+    }
+
+    .header1_container img {
+        width: 188px;
+        height: 100px;
+        object-fit: cover;
+        padding-top: 30px;
+        padding-left: 16px;
+    }
+
+    .header1_buttom {
+        margin-top: 34.3px;
+        margin-left: 1439px;
+        height: 123px;
+        width: 265px;
+        background-color: #FAFCFD;
+        color: #DFA499;
+        font-size: 50px;
+        padding: 24px 4px 24px 4px;
+        border: 1px solid #707070;
+        border-radius: 16px;
+    }

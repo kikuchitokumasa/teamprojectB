@@ -45,12 +45,23 @@
     <link rel="stylesheet" href="./css/management_style.css">
 </head>
 <body>
+    <header class="header1">
+        <div class="header1_container">
+            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+            <a class="header1_buttom" hlef="">ログアウト</a>
+        </div>
+        <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,0 100,100 0,100"/>
+        </svg>
+    </header>
+    
     <div class="mana_d_main_container">
         <div class="mana_d_left_container">
             <div class="mana_d_circle"><a href="">新規投稿</a></div>
             <p><?php echo $_SESSION["user_name"]; ?>さん</p>
             <img src="./img/girl.png" alt="img">
         </div>
+
         <div class="mana_d_right_container">
             <h1>一覧</h1>
             <table>
