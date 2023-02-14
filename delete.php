@@ -43,5 +43,19 @@
         </div>
     </div>
     
+    <footer class="footer1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5.29" preserveAspectRatio="none">
+        <polygon points="0,0 100,0 100,5.29"/>
+        </svg>
+        <div class="footer1_container">
+            <a class="footer1_title" href="management_top.php">BLOG</a>
+            <ul>
+                <li><a href="">新規投稿</a></li>
+                <li><a href="">ログアウト</a></li>
+            </ul>
+        <p class="footer1_c">&copy; Bチーム</p>
+        </div>
+    </footer>
+
 </body>
 </html>
