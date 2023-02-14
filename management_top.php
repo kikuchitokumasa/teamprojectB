@@ -16,7 +16,6 @@
     $stm->bindValue(':user_id', $user_id, PDO::PARAM_INT);
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
-
     
     $sql = "SELECT * FROM account WHERE user_id = :user_id";
 
