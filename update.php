@@ -94,6 +94,16 @@
     <link rel="stylesheet" href="./css/management_style.css">
 </head>
 <body>
+    <header class="header1">
+        <div class="header1_container">
+            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+            <a class="header1_buttom" hlef="">ログアウト</a>
+        </div>
+        <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,0 100,100 0,100"/>
+        </svg>
+    </header>
+    
     <div class="update_main_container">
         <h1>編集</h1>
         <form action="update_success.php" method="post">
