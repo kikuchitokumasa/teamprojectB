@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* top index */
+    .browse_main_container {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 10.5px;
+        margin-bottom: 110.8px; 
+    }
+
+    .browse_main_container table {
+        border: 5px solid #99D3DF;
+        border-spacing: 0;
+        border-radius: 10px;
+        margin-left: 210px;
+    }
+
+    .browse_main_container table a {
+        text-decoration: none;
+        color: #707070;
+    }
+
+    .browse_main_container td  {
+        border-bottom: 5px solid #99D3DF;
+    }
+
+    .browse_main_container tr:last-child>* {
+        /* 最後の行　下線なし */
+        border-bottom: 0px solid #99D3DF;
+    }
+
+    .browse_title {
+        padding-top: 22.5px;
+        padding-bottom: 22.5px;
+        padding-left: 65px;
+        font-size: 40px;
+        width: 1200px;
+    }
+
+    .browse_name {
+        font-size: 30px;
+        padding-top: 38px;
+        padding-bottom: 22px;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
