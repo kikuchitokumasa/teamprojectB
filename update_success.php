@@ -29,10 +29,10 @@
     if(empty($text)){
         $error = true;
         $_SESSION["error_text"] = "本文は必須です。";
-    }
+    } else 
     //theme
     $theme = trim($_POST["theme"], "\x20\t\n\r\0\v");
-    if(empty($text)){
+    if(empty($theme)){
         $error = true;
         $_SESSION["error_theme"] = "テーマは必須です。";
     }
@@ -44,7 +44,7 @@
 
     //入力エラーがどこかで発生したらリダイレクトする。
     if($error){
-        header('Location: index.php');
+        header('Location: update.php');
         exit();
     } 
 
@@ -71,7 +71,6 @@
 
     $stm->execute();
 
-    $_SESSION["blog_id"] = [];
 
 ?>
 <!DOCTYPE html>

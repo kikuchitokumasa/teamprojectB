@@ -104,7 +104,6 @@
         margin-right: 23px;
     }
 /* post */
-/* update */
 .post_main_container {
     padding-left: 5%;
     padding-right: 5%;
@@ -230,6 +229,10 @@ input[type="submit"] {
         font-size: 80px;
         padding-top: 18px;
         padding-bottom: 46px;
+    }
+
+    .update_error {
+        color: #df5c45;
     }
 
     .update_main_container form {

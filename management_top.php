@@ -28,7 +28,18 @@
     }
     $user_name = $_SESSION["user_name"];
 
-?>
+
+    $_SESSION["blog_id"] = [];
+    $_SESSION["title"] = [];
+    $_SESSION["text"] = [];
+    $_SESSION["release"] = [];
+    $_SESSION["theme"] = [];
+
+    $_SESSION["error_title"] = [];
+    $_SESSION["error_text"] = [];
+    $_SESSION["error_release"] = [];
+    $_SESSION["error_theme"] = [];
+ ?>
 
 <!DOCTYPE html>
 <html lang="ja">
