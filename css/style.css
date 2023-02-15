@@ -95,3 +95,22 @@
         background-color: #99D3DF;
     }
 
+@media screen and (max-width: 960px) {
+/* header1 */
+    .header1_buttom {
+        font-size: 1.5rem;
+    }
+
+/* footer */
+    .footer1_title {
+        font-size: 2.125rem;
+    }
+
+    .footer1_container li {
+        font-size: 0.5625rem;
+    }
+
+    .footer1_c {
+        font-size: 0.5625rem;
+    }
+}

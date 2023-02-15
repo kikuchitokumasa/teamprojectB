@@ -297,3 +297,47 @@
     }
 
 
+@media screen and (max-width: 960px) {
+    /* management top */
+
+    /* left container */
+    .mana_d_circle a {
+        font-size: 2.125rem;
+    }
+
+    .mana_d_left_container p {
+        font-size: 2.125rem;
+    }
+
+    /* right container */
+
+    .mana_d_right_container h1 {
+        font-size: 2.125rem;
+    }
+
+    .mana_d_title {
+        font-size: 1.5rem;
+    }
+
+    .mana_d_buttom {
+        font-size: 1.3rem;
+    }
+
+    .mana_d_update {
+        border: 3px solid #DFA499;
+        border-radius: 10px;
+        margin-right: 1.458vw
+    }
+
+    .mana_d_delete {
+        border: 3px solid #99D3DF;
+        border-radius: 10px;
+        margin-right: 1.198vw;
+    }
+
+}
+    
+@media screen and (max-width: 520px) {
+
+}
+  
