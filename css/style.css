@@ -1,6 +1,6 @@
 @charset "utf-8";
     html {
-        font-size: 100%;
+        /* font-size: 100%; */
     }
 
     body {
@@ -13,7 +13,7 @@
     .header1 {
         position: relative;
         width: 100%;
-        height: 203px;
+        height: 10.573vw;
         background: #99D3DF;
     }
 
@@ -21,7 +21,7 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 69px;
+        height: 3.594vw;
         fill: #FAFCFD;
     }
 
@@ -31,23 +31,23 @@
     }
 
     .header1_container img {
-        width: 188px;
-        height: 100px;
+        width: 9.792vw;
+        height: 5.208vw;
         object-fit: cover;
-        padding-top: 30px;
-        padding-left: 16px;
+        padding-top: 1.563vw;
+        padding-left: 0.833vw;
     }
 
     .header1_buttom {
         text-decoration: none;
-        margin-top: 34.3px;
-        margin-left: 1439px;
-        height: 123px;
-        width: 270px;
+        margin-top: 1.786vw;
+        margin-left: 74.948vw;
+        height: 6.406vw;
+        width: 14.063vw;
         background-color: #FAFCFD;
         color: #DFA499;
-        font-size: 50px;
-        padding: 20px 4px 20px 4px;
+        font-size: 3.125rem;
+        padding: 1.042vw 0.208vw 1.042vw 0.208vw;
         border: 1px solid #707070;
         border-radius: 16px;
         text-decoration: none;
@@ -57,7 +57,7 @@
     .footer1 {
         position: relative;
         width: 100%;
-        height: 519px;
+        height: 27.031vw;
         background-color: #99D3DF;
     }
 
@@ -75,23 +75,23 @@
     }
 
     .footer1_title {
-        font-size: 50px;
-        padding-top: 2.2px;
-        padding-left: 110px;
+        font-size: 3.125rem;
+        padding-top: 0.115vw;
+        padding-left: 5.729vw;
     }
 
     .footer1_container li {
         list-style: none;
-        font-size: 25px;
-        padding-bottom: 10px;
-        padding-left: 160px;
+        font-size: 1.5625rem;
+        padding-bottom: 0.521vw;
+        padding-left: 8.333vw;
     }
 
     .footer1_c {
         color: #DFA499;
-        font-size: 25px;
+        font-size: 1.5625rem;
         text-align: center;
-        padding-top: 211.7px;
+        padding-top: 11.026vw;
         background-color: #99D3DF;
     }
 

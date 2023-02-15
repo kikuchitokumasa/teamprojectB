@@ -10,12 +10,12 @@
     /* left container */
     .mana_d_left_container {
         text-align: center;
-        margin-right: 30px;
+        margin-right: 1.5163vw;
     }
 
     .mana_d_circle {
-        width: 305px;
-        height: 305px;
+        width: 15.885vw;
+        height: 15.885vw;
         border-radius: 50%;
         background-color: #DFA499;
         text-align: center;
@@ -26,37 +26,37 @@
         align-items: center;
 
         margin: 0 auto;
-        margin-bottom: 33px;
+        margin-bottom: 1.719vw;
     }
 
     .mana_d_circle a {
         text-decoration: none;
-        font-size: 50px;
+        font-size: 3.125rem;
         color: #FAFCFD;
     }
 
     .mana_d_left_container img {
-        width: 550px;
-        height: 749px;
+        width: 15.885vw;
+        height: 39.010vw;
         object-fit: cover;
     }
 
     .mana_d_left_container p {
-        font-size: 50px;
+        font-size: 3.125rem;
         margin-top: 0;
-        margin-bottom: 57px;
+        margin-bottom: 2.96vw;
     }
 
     /* right container */
     .mana_d_right_container {
-        padding-left: 30px;
+        padding-left: 1.563svw;
     }
 
     .mana_d_right_container h1 {
         font-weight: normal;
-        font-size: 50px;
-        padding-top: 46.7px;
-        padding-bottom: 14px;
+        font-size: 3.125rem;
+        padding-top: 2.432vw;
+        padding-bottom: 0.729vw;
     }
 
     .mana_d_right_container table {
@@ -80,28 +80,28 @@
     }
 
     .mana_d_title {
-        padding-top: 22.5px;
-        padding-bottom: 22.5px;
-        padding-left: 65px;
-        font-size: 40px;
-        width: 700px;
+        padding-top: 1.172vw;
+        padding-bottom: 1.172vw;
+        padding-left: 3.385vw;
+        font-size: 2.5rem;
+        width: 36.458vw;
     }
 
     .mana_d_buttom {
-        font-size: 30px;
-        padding: 12.5px 50px 12.5px 50px;
+        font-size: 1.875rem;
+        padding: 0.651vw 2.604vw 0.651vw 2.604vw;
     }
 
     .mana_d_update {
         border: 3px solid #DFA499;
         border-radius: 10px;
-        margin-right: 28px;
+        margin-right: 1.458vw
     }
 
     .mana_d_delete {
         border: 3px solid #99D3DF;
         border-radius: 10px;
-        margin-right: 23px;
+        margin-right: 1.198vw;
     }
 
 /* update */
@@ -112,36 +112,36 @@
 
     .update_main_container h1 {
         font-weight: normal;
-        font-size: 80px;
-        padding-top: 18px;
-        padding-bottom: 46px;
+        font-size: 5rem;
+        padding-top: 0.938vw;
+        padding-bottom: 2.396vw;
     }
 
     .update_main_container form {
         text-align: center;
         text-decoration: none;
-        font-size: 40px;
-        margin-bottom: 99px;
-        padding-left: 67px;
+        font-size: 2.5rem;
+        margin-bottom: 5.156vw;
+        padding-left: 3.49vw;
     }
 
     .update_main_container table {
-        padding-left: 67px;
+        padding-left: 3.49vw;
     }
 
     .update_main_container form table tr th {
         font-weight: normal;
-        padding-right: 76px;
+        padding-right: 3.958vw;
         /* padding-top: 10px; */
     }
 
     .update_main_container form table tr td .update_text,.update_textarea {
-        margin-bottom: 46px;
+        margin-bottom: 2.396vw;
     }
 
     .update_text {
-        width: 1259px;
-        height: 90px;
+        width: 65.573vw;
+        height: 4.688;
         border: 1px solid #707070;
         border-radius: 10px;
         padding-left: 2%;
@@ -149,31 +149,31 @@
 
     .update_upper {
         vertical-align: top;
-        margin-bottom: 46px;
-        padding-top: 19px;
+        margin-bottom: 2.398vw;
+        padding-top: 0.99vw;
     }
 
     .update_textarea {
         resize: none;
-        width: 1259px;
-        height: 699px;
+        width: 65.573vw;
+        height: 36.406vw;
         border: 1px solid #707070;
         border-radius: 10px;
     }
 
     .update_release {
         text-align: left;
-        padding-left: 40px;
+        padding-left: 2.083vw;
     }
 
     .update_radio {
-        width: 30px;
-        height: 30px;
-        margin-right: 30px;
+        width: 1.563vw;
+        height: 1.563vw;
+        margin-right: 1.563vw;
     }
 
     .update_release label {
-        margin-right: 60px;
+        margin-right: 3.125vw;
     }
 
     input[type="submit"] {
@@ -181,40 +181,40 @@
         background-color: #DFA499;
         border: 1px solid #707070;
         border-radius: 10px;
-        padding: 10px 76px 10px 76px;
-        margin-top: 99px;
+        padding: 0.521vw 3.958vw 0.521vw 3.958vw;
+        margin-top: 5.156vw;
     }
 
 /* update success */ 
     .update_success_main_container {
-        padding-top: 21px;
-        padding-bottom: 50px;
+        padding-top: 1.094vw;
+        padding-bottom: 2.604vw;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .update_success_main_container h1 {
         font-weight: normal;
-        font-size: 80px;
-        padding-left: 110px;
+        font-size: 5rem;
+        padding-left: 5.729vw;
     }
 
     .update_success_center {
         text-align: center;
-        padding-bottom: 153px;
+        padding-bottom: 7.969vw;
     }
 
     .update_success_center p {
-        font-size: 60px;
-        padding-bottom: 100px;
+        font-size: 3.75rem;
+        padding-bottom: 5.208vw;
     }
 
     .update_success_center a {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: #FAFCFD;
         background-color: #DFA499;
-        padding: 10px 110px 10px 110px;
+        padding: 0.521vw 5.729vw 0.521vw 5.729vw;
         border: 1px solid #707070;
         border-radius: 10px;
     }
@@ -223,30 +223,30 @@
     .delete_main_container {
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 21px;
+        padding-top: 1.094vw;
     }
 
     .delete_main_container h1 {
         font-weight: normal;
-        font-size: 80px;
-        padding-left: 110px;
+        font-size: 5rem;
+        padding-left: 5.729vw;
     }
 
     .delete_center {
         text-align: center;
-        padding-top: 50px;
-        padding-bottom: 143px;
+        padding-top: 2.604vw;
+        padding-bottom: 7.448vw;
     }
 
     .delete_center p {
-        font-size: 60px;
-        padding-bottom: 110px;
+        font-size: 3.75rem;
+        padding-bottom: 5.729vw;
     }
 
     .delete_yes_buttom, .delete_no_buttom {
         text-decoration: none;
-        font-size: 40px;
-        padding: 10px 80.5px 10px 80.5px;
+        font-size: 2.5rem;
+        padding: 0.521vw 4.193vw 0.521vw 4.193vw;
         border: 1px solid #707070;
         border-radius: 10px;
     }
@@ -254,44 +254,44 @@
     .delete_yes_buttom {
         color: #FAFCFD;
         background-color: #DFA499;
-        margin-right: 27px;
+        margin-right: 1.406vw;
     }
 
     .delete_no_buttom {
         background-color: #FAFCFD;
-        margin-left: 27px;
+        margin-left: 1.406vw;
     }
     
 /* delete success */
     .delete_success_main_container {
-        padding-top: 21px;
-        padding-bottom: 50px;
+        padding-top: 1.094vw;
+        padding-bottom: 2.604vw;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .delete_success_main_container h1 {
         font-weight: normal;
-        font-size: 80px;
-        padding-left: 110px;
+        font-size: 5rem;
+        padding-left: 5.729vw;
     }
 
     .delete_success_center {
         text-align: center;
-        padding-bottom: 153px;
+        padding-bottom: 7.969vw;
     }
 
     .delete_success_center p {
-        font-size: 60px;
-        padding-bottom: 100px;
+        font-size: 3.75rem;
+        padding-bottom: 5.208vw;
     }
 
     .delete_success_center a {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: #FAFCFD;
         background-color: #DFA499;
-        padding: 10px 110px 10px 110px;
+        padding: 0.521vw 5.729vw 0.521vw 5.729vw;
         border: 1px solid #707070;
         border-radius: 10px;
     }
