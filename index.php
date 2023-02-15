@@ -1,5 +1,5 @@
 <?php
-//ƒf[ƒ^ƒx[ƒXÚ‘±—pƒtƒ@ƒCƒ‹‚ð“Ç‚Ýž‚Þ
+//ï¿½fï¿½[ï¿½^ï¿½xï¿½[ï¿½Xï¿½Ú‘ï¿½ï¿½pï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½Ç‚Ýï¿½ï¿½ï¿½
     require_once 'db_connect.php';
     
     $sql = "SELECT * FROM blog WHERE release = 1 AND deletes = 0";
@@ -14,11 +14,11 @@ php?>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>php‰Û‘è</title>
+<title>phpï¿½Û‘ï¿½</title>
 <meta name="description"  content="">
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<!--==============ƒŒƒCƒAƒEƒg‚ð§Œä‚·‚é“ÆŽ©‚ÌCSS‚ð“Ç‚Ýž‚Ý===============-->
+<!--==============ï¿½ï¿½ï¿½Cï¿½Aï¿½Eï¿½gï¿½ð§Œä‚·ï¿½ï¿½ÆŽï¿½ï¿½ï¿½CSSï¿½ï¿½Ç‚Ýï¿½ï¿½ï¿½===============-->
 <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/css/6-1-6.css">
@@ -26,7 +26,7 @@ php?>
 </head>
 
 <body>
-<h2>ƒƒS</h2>
+<h2>ï¿½ï¿½ï¿½S</h2>
 
 <ul class="slider">
   <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/img/img_01.jpg" alt=""></li>
