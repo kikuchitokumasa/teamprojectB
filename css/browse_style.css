@@ -4,15 +4,15 @@
     .browse_main_container {
         padding-left: 5%;
         padding-right: 5%;
-        margin-top: 10.5px;
-        margin-bottom: 110.8px; 
+        margin-top: 0.547vw;
+        margin-bottom: 5.771vw; 
     }
 
     .browse_main_container table {
         border: 5px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
-        margin-left: 210px;
+        margin-left: 10.938vw;
     }
 
     .browse_main_container table a {
@@ -30,17 +30,17 @@
     }
 
     .browse_title {
-        padding-top: 22.5px;
-        padding-bottom: 22.5px;
-        padding-left: 65px;
+        padding-top: 1.172vw;
+        padding-bottom: 1.172vw;
+        padding-left: 3.385vw;
         font-size: 40px;
-        width: 1200px;
+        width: 62.5vw;
     }
 
     .browse_name {
         font-size: 30px;
-        padding-top: 38px;
-        padding-bottom: 22px;
-        padding-left: 50px;
-        padding-right: 25px;
+        padding-top: 1.979vw;
+        padding-bottom: 1.146vw;
+        padding-left: 2.604vw;
+        padding-right: 1.172vw;
     }
