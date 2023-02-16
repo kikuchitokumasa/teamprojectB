@@ -59,7 +59,7 @@
         <div class="header1_container">
             <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
             
-            <form action="select_like.php" method="post">
+            <form action="management_selectLike.php" method="post">
                 <input type="text" name="keyword">
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>

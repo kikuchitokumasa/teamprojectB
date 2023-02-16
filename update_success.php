@@ -88,6 +88,12 @@
     <header class="header1">
         <div class="header1_container">
             <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+
+			<form action="management_selectLike.php" method="post">
+                <input type="text" name="keyword">
+                <div class="header1_submit"><input type="submit" value="検索"></div>
+            </form>
+
             <a class="header1_buttom" hlef="">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">

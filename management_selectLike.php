@@ -30,7 +30,7 @@
         <div class="header1_container">
             <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
             
-            <form action="select_like.php" method="post">
+            <form action="management_selectLike.php" method="post">
                 <input type="text" name="keyword">
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
@@ -46,7 +46,7 @@
         <div class="select_like_left_container">
             <div class="select_like_circle"><a href="">新規投稿</a></div>
             <p><?php echo $_SESSION["user_name"]; ?>さん</p>
-            <img src="./img/girl.png" alt="img">
+            <img src="./img/girl2.png" alt="img">
         </div>
 
         <div class="select_like_right_container">
