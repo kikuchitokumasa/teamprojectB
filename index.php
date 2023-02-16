@@ -1,9 +1,19 @@
 <?php
     //データベース接続用ファイルを読み込む
     require_once 'db_connect.php';
+
+
+    //セッションの破棄
+    $_SESSION = [];
+    //セッションの鍵(cookie)を削除
+    if(isset($_COOKIE[session_name()])){
+         setcookie(session_name(),"",time() -1800);
+    }
+    //セッションファイルの破棄
+    session_destroy();
+
     
     $sql = "SELECT * FROM blog JOIN account ON blog.user_id = account.user_id WHERE releases = 1 AND deletes = 0";
-
     $stm = $pdo->prepare($sql);
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
@@ -36,7 +46,7 @@
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
             
-            <a class="header1_buttom" href="">ログイン</a>
+            <a class="header1_buttom" href="login.php">ログイン</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
