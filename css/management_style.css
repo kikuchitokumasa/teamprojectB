@@ -104,7 +104,6 @@
         margin-right: 23px;
     }
 /* post */
-/* update */
 .post_main_container {
     padding-left: 5%;
     padding-right: 5%;
@@ -178,7 +177,7 @@
     margin-right: 60px;
 }
 
-input[type="submit"] {
+.post_main_container input[type="submit"] {
     color: #FAFCFD;
     background-color: #DFA499;
     border: 1px solid #707070;
@@ -230,6 +229,10 @@ input[type="submit"] {
         font-size: 80px;
         padding-top: 18px;
         padding-bottom: 46px;
+    }
+
+    .update_error {
+        color: #df5c45;
     }
 
     .update_main_container form {
@@ -291,7 +294,7 @@ input[type="submit"] {
         margin-right: 60px;
     }
 
-    input[type="submit"] {
+    .update_main_container input[type="submit"] {
         color: #FAFCFD;
         background-color: #DFA499;
         border: 1px solid #707070;
@@ -410,4 +413,121 @@ input[type="submit"] {
         border-radius: 10px;
     }
 
+/* select like */
+    .select_like_main_container {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+    }
 
+    /* left container */
+    .select_like_left_container {
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .select_like_circle {
+        width: 305px;
+        height: 305px;
+        border-radius: 50%;
+        background-color: #DFA499;
+        text-align: center;
+
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+        margin-bottom: 33px;
+    }
+
+    .select_like_circle a {
+        text-decoration: none;
+        font-size: 50px;
+        color: #FAFCFD;
+    }
+
+    .select_like_left_container img {
+        width: 550px;
+        height: 749px;
+        object-fit: cover;
+    }
+
+    .select_like_left_container p {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 57px;
+    }
+
+    /* right container */
+    .select_like_right_container {
+        padding-left: 30px;
+    }
+
+    .select_like_right_container h1 {
+        font-weight: normal;
+        font-size: 50px;
+        padding-top: 46.7px;
+        padding-bottom: 14px;
+    }
+
+    .select_like_right_container table {
+        border: 5px solid #99D3DF;
+        border-spacing: 0;
+        border-radius: 10px;
+    }
+
+    .select_like_right_container table a {
+        text-decoration: none;
+        color: #707070;
+    }
+
+    .select_like_right_container td  {
+        border-bottom: 5px solid #99D3DF;
+    }
+
+    .select_like_right_container tr:last-child>* {
+        /* 最後の行　下線なし */
+        border-bottom: 0px solid #99D3DF;
+    }
+
+    .select_like_title {
+        padding-top: 22.5px;
+        padding-bottom: 22.5px;
+        padding-left: 65px;
+        font-size: 40px;
+        width: 700px;
+    }
+
+    .select_like_buttom {
+        font-size: 30px;
+        padding: 12.5px 50px 12.5px 50px;
+    }
+
+    .select_like_update {
+        border: 3px solid #DFA499;
+        border-radius: 10px;
+        margin-right: 28px;
+    }
+
+    .select_like_delete {
+        border: 3px solid #99D3DF;
+        border-radius: 10px;
+        margin-right: 23px;
+    }
+    
+    .selet_like_buttom {
+        text-align: center;
+        padding-top: 36px;
+    }
+
+    .selet_like_buttom a {
+        text-decoration: none;
+        font-size: 40px;
+        color: #FAFCFD;
+        background-color: #DFA499;
+        padding: 10px 110px 10px 110px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+    }
