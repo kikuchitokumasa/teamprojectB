@@ -18,18 +18,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" /> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/browse_style.css">
 
-
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
     <header class="header1">
         <div class="header1_container">
             <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+
+            <form action="browse_selectLike.php" method="post">
+                <input type="text" name="keyword">
+                <div class="header1_submit"><input type="submit" value="検索"></div>
+            </form>
+            
             <a class="header1_buttom" href="">ログイン</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
