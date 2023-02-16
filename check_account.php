@@ -57,27 +57,34 @@
     <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
-    <header>
-
+    <header class="header2">
+        <img src="./img/logo.png" alt="logo">
     </header>
 
-    <div class="check_a_main_container">
+    <div class="register_c_main_container">
+        <h1>登録内容の確認</h1>
+        <div class="register_c_table">
             <table>
                 <tr>
-                    <th>ユーザーID</th>
-                    <td><?php echo $_SESSION["r_user_name"]; ?></td>
+                    <th class="register_c_h">ユーザーID</th>
+                    <td class="register_c_d"><?php echo $_SESSION["r_user_name"]; ?></td>
                 </tr>
                 <tr>
-                    <th>パスワード</th>
-                    <td><?php echo $_SESSION["r_pw"]; ?></td>
+                    <th class="register_c_thm"></th>
+                    <td class="register_c_tdm"></td>
+                </tr>
+                <tr>
+                    <th class="register_c_h">パスワード</th>
+                    <td class="register_c_d"><?php echo $_SESSION["r_pw"]; ?></td>
                 </tr>
             </table>
-        <a href="login.php">登録</a>
-        <a href="register_account.php">戻る</a>
+        </div>
+        <div class="register_c_buttom"><a class="register_c_login" href="login.php">登録</a></div><br>
+        <a class="register_c_back" href="register_account.php">戻る</a>
     </div>
 
-    <footer>
-
+    <footer class="footer2">
+        <p class="footer2_c">&copy; Bチーム</p>
     </footer>
 </body>
 </html>

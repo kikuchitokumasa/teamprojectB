@@ -58,16 +58,22 @@
             ?>
         </div>
         <form action="management_top.php" method="post">
-            <table>
-                <tr>
-                    <td>ユーザーID</td>
-                    <td><input type="text" name="user_name"></td>
-                </tr>
-                <tr>
-                    <td>パスワード</td>
-                    <td><input type="password" name="password"></td>
-                </tr>
-            </table>
+            <div class="login_table">
+                <table>
+                    <tr>
+                        <th>ユーザーID</th>
+                        <td><input type="text" name="user_name"></td>
+                    </tr>
+                    <tr>
+                        <th class="login_thm"></th>
+                        <td class="login_tdm"></td>
+                    </tr>
+                    <tr>
+                        <th>パスワード</th>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                </table>
+            </div>
             <input type="submit" value="ログイン">
         </form>
         <a href="register_account.php">-新規会員登録-</a>

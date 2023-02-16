@@ -1,7 +1,8 @@
 <?php
     //データベース接続用ファイルを読み込む
     require_once 'db_connect.php';
-
+    
+    session_start();
 
     //セッションの破棄
     $_SESSION = [];
