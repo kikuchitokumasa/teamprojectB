@@ -29,10 +29,10 @@
     if(empty($text)){
         $error = true;
         $_SESSION["error_text"] = "本文は必須です。";
-    }
+    } else 
     //theme
     $theme = trim($_POST["theme"], "\x20\t\n\r\0\v");
-    if(empty($text)){
+    if(empty($theme)){
         $error = true;
         $_SESSION["error_theme"] = "テーマは必須です。";
     }
@@ -44,7 +44,7 @@
 
     //入力エラーがどこかで発生したらリダイレクトする。
     if($error){
-        header('Location: index.php');
+        header('Location: update.php');
         exit();
     } 
 
@@ -71,7 +71,6 @@
 
     $stm->execute();
 
-    $_SESSION["blog_id"] = [];
 
 ?>
 <!DOCTYPE html>
@@ -84,11 +83,19 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/management_style.css">
+    
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
     <header class="header1">
         <div class="header1_container">
             <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+
+			<form action="management_selectLike.php" method="post">
+                <input type="text" name="keyword">
+                <div class="header1_submit"><input type="submit" value="検索"></div>
+            </form>
+
             <a class="header1_buttom" hlef="">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
