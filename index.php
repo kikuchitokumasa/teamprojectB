@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/browse_style.css">
 
-
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>

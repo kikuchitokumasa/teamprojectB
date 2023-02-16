@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/management_style.css">
+    
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
     <header class="header1">
