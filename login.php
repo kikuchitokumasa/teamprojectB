@@ -3,6 +3,8 @@
     
     require_once 'db_connect.php';
 
+var_dump($_SESSION);
+
     if(!empty($_SESSION["r_user_name"])){
         $sql = "INSERT INTO account VALUE (0, :user_name, :pw)";
 
@@ -23,6 +25,8 @@
         session_destroy();
     }
 
+        
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -39,7 +43,7 @@
 </head>
 <body>
     <header class="header2">
-        <img src="./img/logo.png" alt="logo">
+        <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
     </header>
     <div class="login_main_container">
         <h1>ログイン</h1>

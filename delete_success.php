@@ -39,7 +39,7 @@
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom" hlef="">ログアウト</a>
+            <a class="header1_buttom" href="index.php">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -61,8 +61,8 @@
         <div class="footer1_container">
             <a class="footer1_title" href="management_top.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>

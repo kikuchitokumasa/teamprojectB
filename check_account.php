@@ -49,7 +49,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>登録内容の確認</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login_style.css">
@@ -58,7 +58,7 @@
 </head>
 <body>
     <header class="header2">
-        <img src="./img/logo.png" alt="logo">
+        <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
     </header>
 
     <div class="register_c_main_container">

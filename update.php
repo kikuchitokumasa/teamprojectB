@@ -43,7 +43,7 @@
 <body>
     <header class="header1">
         <div class="header1_container">
-            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+            <a href="management_top.php"><img src="./img/logo.png" alt="logo"></a>
 
 			<form action="management_selectLike.php" method="post">
                 <input type="text" name="keyword">
@@ -117,8 +117,8 @@
         <div class="footer1_container">
             <a class="footer1_title" href="management_top.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>
