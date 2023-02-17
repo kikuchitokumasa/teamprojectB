@@ -11,6 +11,7 @@
     $stm->bindValue(':blog_id',$blog_id,PDO::PARAM_INT);
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +47,7 @@
         <h1>削除</h1>
         <div class="delete_center">
             <p>本当に削除しますか？</p>
-            <a class="delete_yes_buttom" href="delete_success.php?<?php $blog_id ?>" >はい</a>
+            <a class="delete_yes_buttom" href="delete_success.php?blog_id=<?php echo $blog_id ?>" >はい</a>
             <a class="delete_no_buttom" href="management_top.php">いいえ</a>
         </div>
     </div>

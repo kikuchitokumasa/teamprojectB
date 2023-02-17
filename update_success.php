@@ -70,8 +70,6 @@
     $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
 
     $stm->execute();
-
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
