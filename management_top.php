@@ -4,9 +4,58 @@
 
     //データベース接続用ファイルを読み込む
     require_once 'db_connect.php';
+/*login*/
+    $error = false;
+    //session
+    if(!empty($_POST)){
+        //name
+        $_SESSION["user_name"] = htmlspecialchars($_POST["user_name"],ENT_QUOTES,"UTF-8");
+        //pw
+        $_SESSION["pw"] = htmlspecialchars($_POST["password"],ENT_QUOTES,"UTF-8");
+    }
 
-    if(!empty($_GET["user_id"])){
-        $_SESSION["user_id"] = $_GET["user_id"];
+    $sql = "SELECT * FROM account WHERE user_name = :user_name";
+
+    $stm = $pdo->prepare($sql);
+    $stm->bindValue(':user_name', $_SESSION["user_name"], PDO::PARAM_STR);
+    $stm->execute();
+    $login_result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+    //error check
+
+        if($login_result === null) {
+            $error = true;
+            $_SESSION["error_db"] = "IDやパスワードが間違っていませんか";
+        } else {
+            //name
+            $user_name = trim($_POST["user_name"], "\x20\t\n\r\0\v");
+            if(empty($user_name)){
+                $error = true;
+                $_SESSION["error_user_name"] = "ユーザーIDは必須です。";
+            } else if(preg_match("/^[0-9a-zA-Z]*$/u",$user_name) === 0) {
+                $error = true;
+                $_SESSION["error_user_name"] = "ユーザーIDは半角英数字のみです。";
+            } 
+            //pw
+            $pw= trim($_POST["password"], "\x20\t\n\r\0\v");
+            if(empty($pw)){
+                $error = true;
+                $_SESSION["error_pw"] = "パスワードは必須です。";
+            } else if($login_result[0]["password"] !== $pw){
+                $error = true;
+                $_SESSION["error_pw"] = "パスワードが間違っています。";
+            }
+        }
+  
+    //入力エラーがどこかで発生したらリダイレクトする。
+    if($error){
+        header('Location: login.php');
+        exit();
+    } 
+    
+/*top*/
+    if(!empty($login_result[0]["user_id"])){
+        $_SESSION["user_id"] = $login_result[0]["user_id"];
     }
     $user_id = $_SESSION["user_id"];
     
@@ -39,6 +88,12 @@
     $_SESSION["error_text"] = [];
     $_SESSION["error_release"] = [];
     $_SESSION["error_theme"] = [];
+
+    $_SESSION["user_name"] = [];
+    $_SESSION["pw"] = [];
+    $_SESSION["error_db"] = [];
+    $_SESSION["error_user_name"] = [];
+    $_SESSION["error_pw"] = [];
  ?>
 
 <!DOCTYPE html>
@@ -59,14 +114,14 @@
 <body>
     <header class="header1">
         <div class="header1_container">
-            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+            <a href="management_top.php"><img src="./img/logo.png" alt="logo"></a>
             
             <form action="management_selectLike.php" method="post">
                 <input type="text" name="keyword">
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom" href="">ログアウト</a>
+            <a class="header1_buttom" href="index.php">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -75,8 +130,8 @@
     
     <div class="mana_d_main_container">
         <div class="mana_d_left_container">
-            <div class="mana_d_circle"><a href="">新規投稿</a></div>
-            <p><?php echo $_SESSION["user_name"]; ?>さん</p>
+            <div class="mana_d_circle"><a href="confirm.php">新規投稿</a></div>
+            <p><?php echo $user_name; ?>さん</p>
             <img src="./img/girl.png" alt="img">
         </div>
 
@@ -105,8 +160,8 @@
         <div class="footer1_container">
             <a class="footer1_title" href="management_top.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>

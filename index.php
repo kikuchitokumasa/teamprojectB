@@ -2,8 +2,19 @@
     //データベース接続用ファイルを読み込む
     require_once 'db_connect.php';
     
-    $sql = "SELECT * FROM blog JOIN account ON blog.user_id = account.user_id WHERE releases = 1 AND deletes = 0";
+    session_start();
 
+    //セッションの破棄
+    $_SESSION = [];
+    //セッションの鍵(cookie)を削除
+    if(isset($_COOKIE[session_name()])){
+         setcookie(session_name(),"",time() -1800);
+    }
+    //セッションファイルの破棄
+    session_destroy();
+
+    
+    $sql = "SELECT * FROM blog JOIN account ON blog.user_id = account.user_id WHERE releases = 1 AND deletes = 0";
     $stm = $pdo->prepare($sql);
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
@@ -12,7 +23,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>php</title>
+    <title>ログイン</title>
     <meta name="description"  content="">
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -29,14 +40,14 @@
 <body>
     <header class="header1">
         <div class="header1_container">
-            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+            <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
 
             <form action="browse_selectLike.php" method="post">
                 <input type="text" name="keyword">
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
             
-            <a class="header1_buttom" href="">ログイン</a>
+            <a class="header1_buttom" href="login.php">ログイン</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -57,8 +68,8 @@
             foreach($result as $data) {
                 echo<<<"EOD"
                     <tr>
-                        <td class="browse_title"><a href="">{$data['title']}</a></td>
-                        <td class="browse_name"><a href="">{$data['user_name']}</a></td>
+                        <td class="browse_title"><a href="browse_select.php{$data['id']}">{$data['title']}</a></td>
+                        <td class="browse_name"><a href="browse_select.php{$data['id']}">{$data['user_name']}</a></td>
                     </tr>
                 EOD;
             }    
@@ -71,9 +82,9 @@
         <polygon points="0,0 100,0 100,5.29"/>
         </svg>
         <div class="footer1_container">
-            <a class="footer1_title" href="management_top.php">BLOG</a>
+            <a class="footer1_title" href="index.php">BLOG</a>
             <ul>
-                <li><a href="">ログイン</a></li>
+                <li><a href="login.php">ログイン</a></li>
             </ul>
             <p class="footer1_c">&copy; Bチーム</p>
         </div>

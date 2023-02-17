@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/* login */
+    .login_main_container {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 73px;
+        padding-bottom: 136px;
+    }
+
+    .login_main_container h1 {
+        font-weight: normal;
+        font-size: 50px;
+    }
+
+    .login_error {
+        color: #df5c45;
+    }
+
+    .login_table {
+        display:flex;
+        justify-content:center;
+        margin-top: 50px;
+        margin-bottom: 73px;
+    }
+
+    .login_main_container th {
+        font-weight: normal;
+        font-size: 35px;
+        padding-right: 23px;
+    }
+
+    .login_main_container td input {
+        font-size: 30px;
+        background-color: #FAFCFD;
+        border: 1px solid #707070;
+        border-radius: 9px;
+        width: 500px;
+        height: 80px;
+        padding: 17.5px 24px 17.5px 24px;
+    }
+
+    .login_thm,.login_tdm {
+        height: 60px;
+    }
+
+    .login_main_container form input[type=submit] {
+        font-size: 40px;
+        color: #FAFCFD;
+        background-color: #DFA499;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding: 10px 170px 10px 170px;
+        margin-bottom: 3px;
+    }
+
+    .login_main_container a {
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+/* register */
+    .register_main_container {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 73px;
+        padding-bottom: 136px;
+    }
+
+    .register_main_container h1 {
+        font-weight: normal;
+        font-size: 50px;
+    }
+
+    .register_error {
+        color: #df5c45;
+    }
+
+    .register_table {
+        display:flex;
+        justify-content:center;
+        margin-top: 50px;
+        margin-bottom: 37px;
+    }
+
+    .register_main_container th {
+        font-weight: normal;
+        font-size: 35px;
+        padding-right: 23px;
+        text-align: right;
+    }
+
+    .register_main_container td input {
+        font-size: 30px;
+        background-color: #FAFCFD;
+        border: 1px solid #707070;
+        border-radius: 9px;
+        width: 500px;
+        height: 80px;
+        padding: 17.5px 24px 17.5px 24px;
+    }
+
+    .register_thm,.register_tdm{
+        height: 45px;
+    }
+
+    .register_main_container form input[type=submit] {
+        font-size: 40px;
+        color: #FAFCFD;
+        background-color: #DFA499;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding: 10px 110px 10px 110px;
+    }
+
+/* check */
+/* register */
+    .register_c_main_container {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 73px;
+        padding-bottom: 115px;
+    }
+
+    .register_c_main_container h1 {
+        font-weight: normal;
+        font-size: 50px;
+    }
+
+    .register_c_table {
+        display:flex;
+        justify-content:center;
+        margin-top: 50px;
+        margin-bottom: 37px;
+    }
+
+    .register_c_h {
+        font-weight: normal;
+        font-size: 35px;
+        padding-right: 23px;
+        text-align: right;
+    }
+
+    .register_c_d {
+        font-size: 35px;
+        /* width: 500px; */
+        height: 80px;
+        padding: 17.5px 0px 17.5px 60px;
+    }
+
+    .register_c_thm,.register_c_tdm{
+        height: 8px;
+    }
+
+    .register_c_buttom {
+        margin-bottom: 14px;
+    }
+
+    .register_c_login {
+        text-decoration: none;
+        font-size: 40px;
+        color: #FAFCFD;
+        background-color: #DFA499;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding: 10px 210px 10px 210px;
+    }
+
+    .register_c_back {
+        text-decoration: none;
+        font-size: 26px;
+        background-color: #FFFFFF;
+        padding: 8px 144px 8px 144px;
+        border: 1px solid #707070;
+        border-radius: 9px;
+    }
+

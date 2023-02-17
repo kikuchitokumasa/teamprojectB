@@ -36,7 +36,7 @@
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom" hlef="">ログアウト</a>
+            <a class="header1_buttom" href="index.php">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -47,7 +47,7 @@
         <div class="delete_center">
             <p>本当に削除しますか？</p>
             <a class="delete_yes_buttom" href="delete_success.php?<?php $blog_id ?>" >はい</a>
-            <a class="delete_no_buttom" href="management_top.php" >いいえ</a>
+            <a class="delete_no_buttom" href="management_top.php">いいえ</a>
         </div>
     </div>
     
@@ -58,8 +58,8 @@
         <div class="footer1_container">
             <a class="footer1_title" href="management_top.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>

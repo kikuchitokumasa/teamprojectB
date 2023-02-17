@@ -21,7 +21,7 @@ $stm->execute();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>新規投稿完了</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/management_style.css">
@@ -38,7 +38,7 @@ $stm->execute();
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom" href="">ログアウト</a>
+            <a class="header1_buttom" href="index.php">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -48,7 +48,7 @@ $stm->execute();
         <h1>新規投稿</h1>
         <div class="post_success_center">
             <p>とうろくしました</p>
-            <a href="index.php">トップページへ</a>
+            <a href="management_top.php">トップページへ</a>
         </div>
     </div>
     <footer class="footer1">
@@ -58,8 +58,8 @@ $stm->execute();
         <div class="footer1_container">
             <a class="footer1_title" href="management_top.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>
