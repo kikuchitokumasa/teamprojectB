@@ -1,16 +1,7 @@
 <?php
     session_start();
-    require_once "db_connect.php";
 
-    $keyword = $_POST["keyword"];
-    $key = '%'.$keyword.'%';
-
-    $sql = "SELECT * FROM blog JOIN account ON blog.user_id = account.user_id  WHERE releases = 1 AND deletes = 0 AND theme LIKE :keyword";
-
-    $stm = $pdo->prepare($sql);
-    $stm->bindValue(':keyword', $key, PDO::PARAM_STR);
-    $stm->execute();
-    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+    require_once 'db_connect.php';
 
 ?>
 <!DOCTYPE html>
@@ -20,11 +11,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/browse_style.css">
-    
-    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
     <header class="header1">
@@ -42,24 +28,23 @@
         <polygon points="0,0 100,100 0,100"/>
         </svg>
     </header>
-    
-    <div class="select_like_main_container">
-        <h1>検索結果:<?php echo $keyword ?></h1>
-        <table>
-        <?php
-            foreach($result as $data) {
-                echo<<<"EOD"
-                    <tr>
-                        <td class="select_like_title"><a href="">{$data['title']}</a></td>
-                        <td class="select_like_name"><a href="">{$data['user_name']}</a></td>
-                    </tr>
-                EOD;
-            }    
-        ?>
-        </table> 
-        <div class="selet_like_buttom">
-            <a href="index.php">トップページへ</a>
-        </div>    
+
+    <div class="browse_d_main_container">
+        <div class="browse_d_article_move">
+
+        </div>
+        <div class="browse_d_main_contents">
+            <div class="browse_d_article">
+                <h1>タイトル</h1>
+                <p>投稿者:</p>
+                <p>テーマ:</p>
+                <p>本文</p>
+            </div>
+        </div>
+        <div class="browse_d_article_move">
+            
+        </div>
+        <a href="">トップページへ</a>
     </div>
 
     <footer class="footer1">

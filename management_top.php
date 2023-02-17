@@ -89,7 +89,7 @@
     $_SESSION["error_release"] = [];
     $_SESSION["error_theme"] = [];
 
-    $_SESSION["user_name"] = [];
+    // $_SESSION["user_name"] = [];
     $_SESSION["pw"] = [];
     $_SESSION["error_db"] = [];
     $_SESSION["error_user_name"] = [];
