@@ -3,17 +3,18 @@
     //データベース接続用ファイルを読み込む
     require_once 'db_connect.php';
 
-    $blog_id = $_SESSION["blog_id"];
+    // $blog_id = $_SESSION["blog_id"];
 
-    $sql = "UPDATE blog SET deletes = '1' WHERE blog_id = :blog_id";
+    $sql = "UPDATE blog SET deletes = 1 WHERE blog_id = :blog_id";
 
     $stm = $pdo->prepare($sql);
 
-    $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
+    $stm->bindValue(':blog_id', $_GET["blog_id"], PDO::PARAM_INT);
 
     $stm->execute();
 
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
 
 ?>
 <!DOCTYPE html>
