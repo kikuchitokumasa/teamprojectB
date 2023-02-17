@@ -1,19 +1,22 @@
 <?php
-require_once 'db_connect.php';
+    session_start();
+    require_once 'db_connect.php';
 
-$title = $_POST['title'];
-$text = $_POST['text'];
-$theme = $_POST['theme'];
-$release = $_POST['release'];
+    $title = $_POST['title'];
+    $text = $_POST['text'];
+    $theme = $_POST['theme'];
+    $release = $_POST['release'];
+    $user_id = $_SESSION['user_id'];
 
-$sql = "insert into blog (title, text, theme, releases) values(:title, :text, :theme, :releases)";
+    $sql = "INSERT INTO blog (title, text, theme, releases, user_id) VALUES(:title, :text, :theme, :releases, :user_id)";
 
-$stm = $pdo->prepare($sql);
-$stm->bindValue(':title', $title, PDO::PARAM_STR);
-$stm->bindValue(':text', $text, PDO::PARAM_STR);
-$stm->bindValue(':theme', $theme, PDO::PARAM_STR);
-$stm->bindValue(':releases', $release, PDO::PARAM_STR);
-$stm->execute();
+    $stm = $pdo->prepare($sql);
+    $stm->bindValue(':title', $title, PDO::PARAM_STR);
+    $stm->bindValue(':text', $text, PDO::PARAM_STR);
+    $stm->bindValue(':theme', $theme, PDO::PARAM_STR);
+    $stm->bindValue(':releases', $release, PDO::PARAM_INT);
+    $stm->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+    $stm->execute();
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -47,7 +50,7 @@ $stm->execute();
     <div class="post_success_main_container">
         <h1>新規投稿</h1>
         <div class="post_success_center">
-            <p>とうろくしました</p>
+            <p>投稿が完了しました。</p>
             <a href="management_top.php">トップページへ</a>
         </div>
     </div>
