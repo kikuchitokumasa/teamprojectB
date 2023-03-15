@@ -47,7 +47,7 @@
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
             
-            <a class="header1_buttom" href="login.php">ログイン</a>
+            <a class="header1_buttom_login" href="login.php">ログイン</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -68,8 +68,8 @@
             foreach($result as $data) {
                 echo<<<"EOD"
                     <tr>
-                        <td class="browse_title"><a href="browse_select.php?blog_id={$data['blog_id']}">{$data['title']}</a></td>
-                        <td class="browse_name"><a href="browse_select.php?blog_id={$data['blog_id']}">{$data['user_name']}</a></td>
+                        <td class="browse_title"><a href="browse_d.php?blog_id={$data['blog_id']}">{$data['title']}</a></td>
+                        <td class="browse_name"><a href="browse_d.php?blog_id={$data['blog_id']}">{$data['user_name']}</a></td>
                     </tr>
                 EOD;
             }    
