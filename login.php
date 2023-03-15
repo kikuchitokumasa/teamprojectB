@@ -3,8 +3,6 @@
     
     require_once 'db_connect.php';
 
-var_dump($_SESSION);
-
     if(!empty($_SESSION["r_user_name"])){
         $sql = "INSERT INTO account VALUE (0, :user_name, :pw)";
 

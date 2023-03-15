@@ -5,13 +5,13 @@
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        padding-top: 73px;
-        padding-bottom: 136px;
+        padding-top: 49px;
+        padding-bottom: 93px;
     }
 
     .login_main_container h1 {
         font-weight: normal;
-        font-size: 50px;
+        font-size: 33px;
     }
 
     .login_error {
@@ -21,43 +21,43 @@
     .login_table {
         display:flex;
         justify-content:center;
-        margin-top: 50px;
-        margin-bottom: 73px;
+        margin-top: 33px;
+        margin-bottom: 49px;
     }
 
     .login_main_container th {
         font-weight: normal;
-        font-size: 35px;
-        padding-right: 23px;
+        font-size: 23px;
+        padding-right: 17px;
     }
 
     .login_main_container td input {
-        font-size: 30px;
+        font-size: 20px;
         background-color: #FAFCFD;
         border: 1px solid #707070;
         border-radius: 9px;
-        width: 500px;
-        height: 80px;
+        width: 334px;
+        height: 54px;
         padding: 17.5px 24px 17.5px 24px;
     }
 
     .login_thm,.login_tdm {
-        height: 60px;
+        height: 30px;
     }
 
     .login_main_container form input[type=submit] {
-        font-size: 40px;
+        font-size: 26px;
         color: #FAFCFD;
         background-color: #DFA499;
         border: 1px solid #707070;
         border-radius: 10px;
-        padding: 10px 170px 10px 170px;
-        margin-bottom: 3px;
+        padding: 7px 115px 7px 115px;
+        margin-bottom: 2px;
     }
 
     .login_main_container a {
         text-decoration: none;
-        font-size: 30px;
+        font-size: 19px;
     }
 
 /* register */
@@ -65,13 +65,13 @@
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        padding-top: 73px;
-        padding-bottom: 136px;
+        padding-top: 48px;
+        padding-bottom: 63px;
     }
 
     .register_main_container h1 {
         font-weight: normal;
-        font-size: 50px;
+        font-size: 32px;
     }
 
     .register_error {
@@ -81,38 +81,38 @@
     .register_table {
         display:flex;
         justify-content:center;
-        margin-top: 50px;
-        margin-bottom: 37px;
+        margin-top: 35px;
+        margin-bottom: 24px;
     }
 
     .register_main_container th {
         font-weight: normal;
-        font-size: 35px;
+        font-size: 22px;
         padding-right: 23px;
         text-align: right;
     }
 
     .register_main_container td input {
-        font-size: 30px;
+        font-size: 20px;
         background-color: #FAFCFD;
         border: 1px solid #707070;
         border-radius: 9px;
-        width: 500px;
-        height: 80px;
+        width: 333px;
+        height: 53px;
         padding: 17.5px 24px 17.5px 24px;
     }
 
     .register_thm,.register_tdm{
-        height: 45px;
+        height: 30px;
     }
 
     .register_main_container form input[type=submit] {
-        font-size: 40px;
+        font-size: 25px;
         color: #FAFCFD;
         background-color: #DFA499;
         border: 1px solid #707070;
         border-radius: 10px;
-        padding: 10px 110px 10px 110px;
+        padding: 7.5px 79.5px 7.5px 79.5px;
     }
 
 /* check */
@@ -121,34 +121,34 @@
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        padding-top: 73px;
-        padding-bottom: 115px;
+        padding-top: 49px;
+        padding-bottom: 77px;
     }
 
     .register_c_main_container h1 {
         font-weight: normal;
-        font-size: 50px;
+        font-size: 33px;
     }
 
     .register_c_table {
         display:flex;
         justify-content:center;
-        margin-top: 50px;
-        margin-bottom: 37px;
+        margin-top: 40px;
+        margin-bottom: 62px;
     }
 
     .register_c_h {
         font-weight: normal;
-        font-size: 35px;
-        padding-right: 23px;
+        font-size: 23px;
+        padding-right: 21px;
         text-align: right;
     }
 
     .register_c_d {
-        font-size: 35px;
+        font-size: 23px;
         /* width: 500px; */
-        height: 80px;
-        padding: 17.5px 0px 17.5px 60px;
+        height: 50px;
+        padding: 24.5px 0px 24.5px 60px;
     }
 
     .register_c_thm,.register_c_tdm{
@@ -156,24 +156,24 @@
     }
 
     .register_c_buttom {
-        margin-bottom: 14px;
+        margin-bottom: 9px;
     }
 
     .register_c_login {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 26px;
         color: #FAFCFD;
         background-color: #DFA499;
         border: 1px solid #707070;
         border-radius: 10px;
-        padding: 10px 210px 10px 210px;
+        padding: 7px 141px 7px 141px;
     }
 
     .register_c_back {
         text-decoration: none;
-        font-size: 26px;
+        font-size: 17px;
         background-color: #FFFFFF;
-        padding: 8px 144px 8px 144px;
+        padding: 6px 96px 6px 96px;
         border: 1px solid #707070;
         border-radius: 9px;
     }

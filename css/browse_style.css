@@ -4,8 +4,8 @@
     .browse_main_container {
         padding-left: 5%;
         padding-right: 5%;
-        margin-top: 10.5px;
-        margin-bottom: 110.8px; 
+        margin-top: 39.8px;
+        margin-bottom: 74px; 
     }
     /*==================================================
     スライダーのためのcss
@@ -82,10 +82,11 @@
 
 
     .browse_main_container table {
-        border: 5px solid #99D3DF;
+        border: 2px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
-        margin-left: 210px;
+        margin-left: 141px;
+        margin-right: 141px;
     }
 
     .browse_main_container table a {
@@ -94,7 +95,7 @@
     }
 
     .browse_main_container td  {
-        border-bottom: 5px solid #99D3DF;
+        border-bottom: 2px solid #99D3DF;
     }
 
     .browse_main_container tr:last-child>* {
@@ -103,120 +104,43 @@
     }
 
     .browse_title {
-        padding-top: 22.5px;
-        padding-bottom: 22.5px;
-        padding-left: 65px;
-        font-size: 40px;
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        padding-left: 38px;
+        font-size: 23px;
         width: 1200px;
     }
 
     .browse_name {
-        font-size: 30px;
-        padding-top: 38px;
-        padding-bottom: 22px;
-        padding-left: 50px;
-        padding-right: 25px;
+        font-size: 17px;
+        padding-top: 22px;
+        padding-bottom: 14px;
+        padding-left: 29px;
+        padding-right: 39px;
     }
 
-/*  */
-
-    /* ========= レイアウトのためのCSS ===============
-    body{
-    background:#eee;
-    }
-    h2,p {
-        text-align:center;
-        padding:20px;
-    }
-    ul{
-    margin:0;
-    padding: 0;
-    list-style: none;
-    }
-    a{
-    color: #333;
-    }
-    a:hover,
-    a:active{
-    text-decoration: none;
-    } */
-    /* form{
-    width:600px; 
-    margin:0 auto;
-    }
-    .inputs{
-    overflow: hidden;
-    margin-bottom: 50px;
-    }
-    .label{
-    float: left;
-    margin-right: 90px;
-    width:135px;
-    border-left: solid 3px blue;
-    padding-left: 10px;
-    }
-    .input_form{
-    float: left;
-    width:600px;
-    }
-    input[type="text"],
-    input[type="number"],
-    input[type="email"],
-    textarea{
-    border: solid 1px #E0E0E0;
-    border-radius:5px;
-    padding:8px;
-    font-size: 15px;
-    }
-    textarea{
-    height: 100px;
-    }
-    .btn-area{
-    text-align: center;
-    }
-    input[type="submit"]{
-    background: blue;
-    border: none;
-    color: #fff;
-    font-size:15px;
-    font-weight:bold;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 10px;
-    }
-    input[type="reset"]{
-    background: #aaa;
-    border: none;
-    color: #fff;
-    font-size:15px;
-    font-weight:bold;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 10px;
-    }
- */
 
 /* select like */
     .select_like_main_container {
-        margin-top: 32.5px;
-        margin-bottom: 82px;
+        margin-top: 6.8px;
+        margin-bottom: 60px;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .select_like_main_container h1 {
         font-weight: normal;
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .select_like_main_container table {
-        border: 5px solid #99D3DF;
+        border: 2px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
         margin-top: 29px;
         margin-bottom: 70px;
-        margin-left: 210px;
-        margin-right: 210px;
+        margin-left: 127px;
+        margin-right: 127px;
     }
 
     .select_like_main_container table a {
@@ -225,7 +149,7 @@
     }
 
     .select_like_main_container td  {
-        border-bottom: 5px solid #99D3DF;
+        border-bottom: 2px solid #99D3DF;
     }
 
     .select_like_main_container tr:last-child>* {
@@ -234,19 +158,19 @@
     }
 
     .select_like_title {
-        padding-top: 22.5px;
-        padding-bottom: 22.5px;
-        padding-left: 65px;
-        font-size: 40px;
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        padding-left: 38px;
+        font-size: 23px;
         width: 1200px;
     }
 
     .select_like_name {
-        font-size: 30px;
-        padding-top: 38px;
-        padding-bottom: 22px;
-        padding-left: 50px;
-        padding-right: 25px;
+        font-size: 17px;
+        padding-top: 22px;
+        padding-bottom: 14px;
+        padding-left: 29px;
+        padding-right: 39px;
     }
 
     .selet_like_buttom {
@@ -255,10 +179,10 @@
 
     .selet_like_buttom a {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 25px;
         color: #FAFCFD;
         background-color: #DFA499;
-        padding: 10px 110px 10px 110px;
+        padding: 10px 77px 10px 77px;
         border: 1px solid #707070;
         border-radius: 10px;
     }
