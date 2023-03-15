@@ -5,7 +5,7 @@
     $keyword = $_POST["keyword"];
     $key = '%'.$keyword.'%';
 
-    $sql = "SELECT * FROM blog JOIN account ON blog.user_id = account.user_id  WHERE releases = 1 AND deletes = 0 AND theme LIKE :keyword";
+    $sql = "SELECT * FROM blog JOIN account ON blog.user_id = account.user_id  WHERE releases = 1 AND deletes = 0 AND title LIKE :keyword AND text LIKE :keyword AND theme LIKE :keyword";
 
     $stm = $pdo->prepare($sql);
     $stm->bindValue(':keyword', $key, PDO::PARAM_STR);
