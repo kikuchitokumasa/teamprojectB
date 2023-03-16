@@ -172,3 +172,82 @@
 
         background-color: #99D3DF;
     }
+
+
+/* レスポンシブ */
+@media(max-width: 600px) {
+    /* header1 */
+    .header1 {
+        height: 56px;
+    }
+
+    .header1_svg {
+        height: 15px;
+    }
+
+    .header1_container img {
+        height: 45px;
+    }
+
+    .header1_container form {
+        margin-top: 12.5px;
+        padding-left: 15.4px;
+    }
+
+    .header1_container input[type=text] {
+        width: 146.89px;
+        height: 22.03px;
+        font-size: 9px;
+        padding: 4px 6px 4px 6px;
+        margin-top: 2px;
+    }
+
+    .header1_submit {
+        padding-top: 0px;
+        padding-left: 3.3px;
+        padding-right: 25.8px;
+    }
+
+    .header1_container input[type=submit]{
+        padding: 2.7px 7.7px 2.7px 7.7px;
+        font-size: 9px;
+    }
+
+    .header1_buttom_login {
+        margin-top: 6px;
+        font-size: 12px;
+        padding: 8.5px 13.1px 8.5px 13.1px;
+        height: 35.05px;
+    }
+
+    .header1_buttom_logout {
+        margin-top: 6px;
+        font-size: 12px;
+        padding: 8.5px 7.1px 8.5px 7.1px;
+        height: 35.05px; 
+    }
+
+
+/* footer */
+    .footer1 {
+        height: 93px;
+    }
+
+    .footer1_title {
+        font-size: 13px;
+        /* padding-top: 14.9px; */
+        margin-left: 24px;
+    }
+
+    .footer1_container li {
+        font-size: 10px;
+        padding-left: 36px;
+    }
+
+    .footer1_c {
+        font-size: 11px;
+        padding-top: 26px;
+        /* text-align: center; */
+    }
+
+}
