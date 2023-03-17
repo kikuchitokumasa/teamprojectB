@@ -79,7 +79,7 @@
                 </tr>
             </table>
         </div>
-        <div class="register_c_buttom"><a class="register_c_login" href="login.php">登録</a></div><br>
+        <div class="register_c_buttom"><a class="register_c_login" href="login.php">登録</a></div>
         <a class="register_c_back" href="register_account.php">戻る</a>
     </div>
 

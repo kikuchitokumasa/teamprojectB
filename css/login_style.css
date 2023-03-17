@@ -156,7 +156,7 @@
     }
 
     .register_c_buttom {
-        margin-bottom: 9px;
+        margin-bottom: 20px;
     }
 
     .register_c_login {
@@ -178,3 +178,133 @@
         border-radius: 9px;
     }
 
+
+/* レスポンシブ */
+@media(max-width: 600px) {
+/* login */
+    .login_main_container {
+        padding-top: 25px;
+        padding-bottom: 444px;
+    }
+
+    .login_main_container h1 {
+        font-size: 23px;
+    }
+
+    .login_table {
+        margin-top: 24px;
+        margin-bottom: 35px;
+    }
+
+    .login_main_container th {
+        font-size: 16px;
+        padding-right: 12px;
+    }
+
+    .login_main_container td input {
+        font-size: 14px;
+        width: 234px;
+        height: 38px;
+        padding: 8.5px 11px 8.5px 11px;
+    }
+
+    .login_thm,.login_tdm {
+        height: 21px;
+    }
+
+    .login_main_container form input[type=submit] {
+        font-size: 18px;
+        padding: 5px 81px 5px 81px;
+        margin-bottom: 2px;
+    }
+
+    .login_main_container a {
+        font-size: 13px;
+    }
+
+/* register */
+    .register_main_container {
+        padding-top: 25px;
+        padding-bottom: 444px;
+    }
+
+    .register_main_container h1 {
+        font-size: 23px;
+    }
+
+    .register_table {
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+
+    .register_main_container th {
+        font-size: 12px;
+        padding-right: 14px;
+    }
+
+    .register_main_container td input {
+        font-size: 14px;
+        width: 214px;
+        height: 37px;
+        padding: 8px 11px 8px 11px;
+    }
+
+    .register_thm,.register_tdm{
+        height: 19px;
+    }
+
+    .register_main_container form input[type=submit] {
+        font-size: 15px;
+        width: 224px;
+        height: 35px;
+        padding: 6px 59.5px 6px 59.5px;
+    }
+
+/* check */
+/* register */
+    .register_c_main_container {
+        padding-top: 25px;
+        padding-bottom: 444px;
+    }
+
+    .register_c_main_container h1 {
+        font-size: 23px;
+    }
+
+    .register_c_table {
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+
+    .register_c_h {
+        font-size: 16px;
+        padding-right: 31px;
+    }
+
+    .register_c_d {
+        font-size: 16px;
+        width: 0px;
+        height: 24px;
+        padding: 0px 0px 0px 0px; 
+    }
+
+    .register_c_thm,.register_c_tdm{
+        height: 35px;
+    }
+
+    .register_c_buttom {
+        margin-bottom: 9px;
+        /*見直し*/
+    }
+
+    .register_c_login {
+        font-size: 18px;
+        padding: 5px 101px 5px 101px;
+    }
+
+    .register_c_back {
+        margin-top: 7px;
+        font-size: 12px;
+        padding: 4px 68.5px 4px 68.5px;
+    }
+}
