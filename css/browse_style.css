@@ -187,3 +187,96 @@
         border-radius: 10px;
     }
     
+
+/* レスポンシブ */
+@media(max-width: 600px) {
+    /* top index */
+    .browse_main_container {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 11.7px;
+        margin-bottom: 32.1px; 
+    }
+    /*==================================================
+    スライダーのためのcss
+    ===================================*/
+    .slider {
+        height: 86.91px;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        margin-bottom: 8px;
+    }
+
+    .slider-item {
+        width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+        height: 86.91px;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    }
+
+    /*ドットナビゲーションの設定*/
+
+    .slick-dots {
+        margin: -10px 0 0 0;
+    }
+
+    .browse_main_container table {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .browse_title {
+        padding-top: 8.3px;
+        padding-bottom: 8.3px;
+        padding-left: 17px;
+        font-size: 7px;
+        /* width: 306.41px; */
+    }
+
+    .browse_name {
+        font-size: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12.3px;
+        padding-right: 6.1px;
+    }
+
+
+    /* select like------------------------ */
+    .select_like_main_container {
+        margin-top: 11.7px;
+        margin-bottom: 32.1px; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .select_like_main_container h1 {
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .select_like_main_container table {
+        margin-top: 0px;
+        margin-bottom: 11.9px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .select_like_title {
+        padding-top: 8.3px;
+        padding-bottom: 8.3px;
+        padding-left: 13.5px;
+        font-size: 7px;
+        width: 100%;
+    }
+
+    .select_like_name {
+        font-size: 6px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12.3px;
+        padding-right: 7.1px;
+    }
+
+    .selet_like_buttom a {
+        font-size: 8px;
+        padding: 5.5px 31px 5.5px 31px;
+    }
+
+}

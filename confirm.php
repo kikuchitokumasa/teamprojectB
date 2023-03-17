@@ -1,4 +1,10 @@
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規投稿</title>
+    <link rel="stylesheet" href="node_modules/ress/ress.css">
+    <!-- reset.css ress -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/management_style.css">

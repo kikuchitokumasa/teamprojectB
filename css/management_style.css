@@ -438,6 +438,8 @@
         padding-left: 5%;
         padding-right: 5%;
         display: flex;
+        margin-top: 42.5px;
+        margin-bottom: 68.5px;
     }
 
     /* left container */
@@ -447,8 +449,8 @@
     }
 
     .select_like_circle {
-        width: 305px;
-        height: 305px;
+        width: 199px;
+        height: 199px;
         border-radius: 50%;
         background-color: #DFA499;
         text-align: center;
@@ -459,25 +461,25 @@
         align-items: center;
 
         margin: 0 auto;
-        margin-bottom: 33px;
+        margin-bottom: 22px;
     }
 
     .select_like_circle a {
         text-decoration: none;
-        font-size: 50px;
+        font-size: 32px;
         color: #FAFCFD;
     }
 
     .select_like_left_container img {
-        width: 550px;
-        height: 749px;
+        width: 360px;
+        height: 490px;
         object-fit: cover;
     }
 
     .select_like_left_container p {
-        font-size: 50px;
+        font-size: 32px;
         margin-top: 0;
-        margin-bottom: 57px;
+        margin-bottom: 38px;
     }
 
     /* right container */
@@ -487,13 +489,13 @@
 
     .select_like_right_container h1 {
         font-weight: normal;
-        font-size: 50px;
-        padding-top: 46.7px;
+        font-size: 32px;
+        padding-top: 30px;
         padding-bottom: 14px;
     }
 
     .select_like_right_container table {
-        border: 5px solid #99D3DF;
+        border: 2px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
     }
@@ -504,7 +506,7 @@
     }
 
     .select_like_right_container td  {
-        border-bottom: 5px solid #99D3DF;
+        border-bottom: 2px solid #99D3DF;
     }
 
     .select_like_right_container tr:last-child>* {
@@ -513,41 +515,499 @@
     }
 
     .select_like_title {
-        padding-top: 22.5px;
-        padding-bottom: 22.5px;
-        padding-left: 65px;
-        font-size: 40px;
-        width: 700px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 43px;
+        font-size: 26px;
+        width: 459px;
     }
 
     .select_like_buttom {
-        font-size: 30px;
-        padding: 12.5px 50px 12.5px 50px;
+        font-size: 19px;
+        padding: 9px 33.5px 9px 33.5px;
     }
 
     .select_like_update {
-        border: 3px solid #DFA499;
+        border: 2px solid #DFA499;
         border-radius: 10px;
-        margin-right: 28px;
+        margin-right: 15px;
     }
 
     .select_like_delete {
-        border: 3px solid #99D3DF;
+        border: 2px solid #99D3DF;
         border-radius: 10px;
-        margin-right: 23px;
+        margin-right: 18px;
     }
     
     .selet_like_buttom {
         text-align: center;
-        padding-top: 36px;
+        padding-top: 43px;
     }
 
     .selet_like_buttom a {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 24px;
         color: #FAFCFD;
         background-color: #DFA499;
-        padding: 10px 110px 10px 110px;
+        padding: 6.5px 68.5px 6.5px 68.5px;
         border: 1px solid #707070;
         border-radius: 10px;
     }
+
+
+/* レスポンシブ */
+@media(max-width: 600px) {
+/* management top */
+    .mana_d_circle {
+        display: none;
+    }
+
+    .mana_d_main_container {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: grid;
+        margin-top: 20.7px;
+        margin-bottom: 16px;
+    }
+
+    /* left container */
+    .mana_d_left_container {
+        text-align: center;
+        margin-right: 30px;
+        display: flex;
+    }
+
+    .mana_d_circle {
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        background-color: #DFA499;
+        text-align: center;
+
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 19px;
+    }
+
+    .mana_d_circle a {
+        font-size: 10px;
+    }
+
+    .mana_d_left_container img {
+        width: 0px;
+        height: 0px;
+    }
+
+    .mana_d_left_container p {
+        font-size: 16px;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+
+    /* right container */
+    .mana_d_right_container {
+        padding-left: 0px;
+    }
+
+    .mana_d_right_container h1 {
+        font-size: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .mana_d_right_container table {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .mana_d_title {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 19px;
+        font-size: 11px;
+        width: 222px;
+    }
+
+    .mana_d_buttom {
+        font-size: 8px;
+        padding: 4px 15px 4px 15px;
+        margin-top: 5px;
+    }
+
+    .mana_d_update {
+        border: 1.5px solid #DFA499;
+        margin-right: 8px;
+    }
+
+    .mana_d_delete {
+        border: 1.5px solid #99D3DF;
+        margin-right: 7px;
+    }
+
+/* post */
+    .post_main_container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .post_main_container h1 {
+        font-size: 18px;
+        padding-top: 12.7px;
+        padding-bottom: 11px;
+        padding-left: 0px;
+    }
+
+    .post_main_container form {
+        font-size: 8px;
+        margin-bottom: 16.1px;
+        padding-left: 0px;
+    }
+
+    .post_main_container table {
+        padding-left: 0px;
+    }
+
+    .post_main_container form table tr th {
+        padding-right: 5px;
+        padding-top: 4px;
+    }
+
+    .post_main_container form table tr td .post_text,.post_textarea {
+        margin-bottom: 10px;
+    }
+
+    .post_text {
+        width: 284px;
+        height: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .post_upper {
+        font-size: 8px;
+        margin-bottom: 46px;
+        padding-top: 19px;
+    }
+
+    .post_textarea {
+        width: 284px;
+        height: 158px;
+    }
+
+    .post_release {
+        text-align: left;
+        padding-top: 0px;
+        padding-left: 8.5px;
+    }
+
+    .post_radio {
+        width: 7px;
+        height: 7px;
+        margin-right: 6px;
+    }
+
+    .post_release label {
+        font-size: 8px;
+        margin-right: 16px;
+    }
+
+    .post_main_container input[type="submit"] {
+        color: #FAFCFD;
+        background-color: #DFA499;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding: 4px 18px 4px 18px;
+        margin-top: 26px;
+    }
+
+
+/* post success */
+    .post_success_main_container {
+        padding-top: 12.7px;
+        padding-bottom: 90.8px;
+    }
+
+    .post_success_main_container h1 {
+        font-size: 18px;
+        margin-left: 0px;
+        padding-bottom: 31px;
+    }
+
+    .post_success_center {
+        text-align: center;
+        padding-bottom: 153px;
+    }
+
+    .post_success_center p {
+        font-size: 18px;
+        padding-bottom: 31px;
+    }
+
+    .post_success_center a {
+        font-size: 12px;
+        padding: 3.5px 36px 3.5px 36px;
+    }
+
+
+/* update */
+    .update_main_container h1 {
+        font-size: 18px;
+        padding-top: 12.7px;
+        padding-bottom: 11px;
+        padding-left: 0px;
+    }
+
+    .update_main_container form {
+        font-size: 8px;
+        margin-bottom: 16.1px;
+        padding-left: 0px;
+    }
+
+    .update_main_container table {
+        padding-left: 0px;
+    }
+
+    .update_main_container form table tr th {
+        padding-right: 5px;
+        padding-top: 4px;
+    }
+
+    .update_main_container form table tr td .update_text,.update_textarea {
+        margin-bottom: 10px;
+    }
+
+    .update_text {
+        width: 284px;
+        height: 20px;
+    }
+
+    .update_upper {
+        font-size: 8px;
+        margin-bottom: 46px;
+        padding-top: 19px;
+    }
+
+    .update_textarea {
+        width: 284px;
+        height: 158px;
+    }
+
+    .update_release {
+        text-align: left;
+        padding-top: 0px;
+        padding-left: 8.5px;
+    }
+
+    .update_radio {
+        width: 7px;
+        height: 7px;
+        margin-right: 6px;
+    }
+
+    .update_release label {
+        font-size: 8px;
+        margin-right: 16px;
+    }
+
+    .update_main_container input[type="submit"] {
+        padding: 4px 18px 4px 18px;
+        margin-top: 26px;
+    }
+
+/* update success */ 
+    .update_success_main_container {
+        padding-top: 12.7px;
+        padding-bottom: 90.8px;
+    }
+
+    .update_success_main_container h1 {
+        font-size: 18px;
+        margin-left: 0px;
+        padding-bottom: 31px;
+    }
+
+    .update_success_center {
+        text-align: center;
+        padding-bottom: 153px;
+    }
+
+    .update_success_center p {
+        font-size: 18px;
+        padding-bottom: 31px;
+    }
+
+    .update_success_center a {
+        font-size: 12px;
+        padding: 3.5px 36px 3.5px 36px;
+    }
+
+/* delete */
+    .delete_main_container {
+        padding-top: 12.7px;
+        padding-bottom: 90.8px;
+    }
+
+    .delete_main_container h1 {
+        font-size: 18px;
+        margin-left: 0px;
+        padding-bottom: 31px;
+    }
+
+    .delete_center p {
+        font-size: 18px;
+        padding-bottom: 31px;
+    }
+
+    .delete_yes_buttom, .delete_no_buttom {
+        font-size: 12px;
+        padding: 4px 26.5px 4px 26.5px;
+    }
+
+    .delete_yes_buttom {
+        margin-right: 8.5px;
+    }
+
+    .delete_no_buttom {
+        margin-left: 8.5px;
+    }
+    
+/* delete success */
+    .delete_success_main_container {
+        padding-top: 12.7px;
+        padding-bottom: 90.8px;
+    }
+
+    .delete_success_main_container h1 {
+        font-size: 18px;
+        margin-left: 0px;
+        padding-bottom: 31px;
+    }
+
+    .delete_success_center {
+        padding-bottom: 153px;
+    }
+
+    .delete_success_center p {
+        font-size: 36px;
+        padding-bottom: 62px;
+    }
+
+    .delete_success_center a {
+        font-size: 12px;
+        padding: 3.5px 36px 3.5px 36px;
+    }
+
+/* select like */
+    .select_like_circle {
+        display: none;
+    }
+
+    .select_like_main_container {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: grid;
+        margin-top: 20.7px;
+        margin-bottom: 16px;
+    }
+
+    /* left container */
+    .select_like_left_container {
+        text-align: center;
+        margin-right: 30px;
+        display: flex;
+    }
+
+    .select_like_circle {
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        background-color: #DFA499;
+        text-align: center;
+
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 19px;
+    }
+
+    .select_like_circle a {
+        font-size: 10px;
+    }
+
+    .select_like_left_container img {
+        width: 0px;
+        height: 0px;
+    }
+
+    .select_like_left_container p {
+        font-size: 16px;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+
+    /* right container */
+    .select_like_right_container {
+        padding-left: 30px;
+    }
+
+    .select_like_right_container h1 {
+        font-size: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    /* ------------3/16ここまで--------------- */
+
+    .select_like_right_container table {
+        border: 2px solid #99D3DF;
+        border-spacing: 0;
+        border-radius: 10px;
+    }
+
+    .select_like_right_container td  {
+        border-bottom: 2px solid #99D3DF;
+    }
+
+    .select_like_title {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 19px;
+        font-size: 11px;
+        width: 222px;
+    }
+
+    .select_like_buttom {
+        font-size: 8px;
+        padding: 4px 15px 4px 15px;
+        margin-top: 5px;
+    }
+
+    .select_like_update {
+        border: 1.5px solid #DFA499;
+        margin-right: 8px;
+    }
+
+    .select_like_delete {
+        border: 1.5px solid #99D3DF;
+        margin-right: 8px;
+    }
+    
+    .selet_like_buttom {
+        padding-top: 15px;
+    }
+
+    .selet_like_buttom a {
+        font-size: 8px;
+        padding: 3.5px 25.5px 3.5px 25.5px;
+    }
+
+}

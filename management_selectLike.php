@@ -5,7 +5,7 @@
     $keyword = $_POST["keyword"];
     $key = '%'.$keyword.'%';
 
-    $sql = "SELECT * FROM blog WHERE user_id = :user_id AND deletes = 0  AND deletes = 0 AND title LIKE :keyword AND text LIKE :keyword AND theme LIKE :keyword";
+    $sql = "SELECT * FROM blog WHERE user_id = :user_id AND deletes = 0  AND deletes = 0 AND theme LIKE :keyword";
 
     $stm = $pdo->prepare($sql);
     $stm->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_INT);
