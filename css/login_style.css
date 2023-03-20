@@ -5,8 +5,8 @@
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        padding-top: 49px;
-        padding-bottom: 93px;
+        padding-top: 3.828%;
+        padding-bottom: 7.266%;
     }
 
     .login_main_container h1 {
@@ -21,8 +21,8 @@
     .login_table {
         display:flex;
         justify-content:center;
-        margin-top: 33px;
-        margin-bottom: 49px;
+        margin-top: 2.578%;
+        margin-bottom: 3.828%;
     }
 
     .login_main_container th {

@@ -4,8 +4,8 @@
     .browse_main_container {
         padding-left: 5%;
         padding-right: 5%;
-        margin-top: 39.8px;
-        margin-bottom: 74px; 
+        margin-top: 3.109%;
+        margin-bottom: 5.781%; 
     }
     /*==================================================
     スライダーのためのcss
@@ -85,8 +85,8 @@
         border: 2px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
-        margin-left: 141px;
-        margin-right: 141px;
+        margin-left: 11.016%;
+        margin-right: 11.016%;
     }
 
     .browse_main_container table a {
@@ -104,26 +104,27 @@
     }
 
     .browse_title {
-        padding-top: 13.5px;
-        padding-bottom: 13.5px;
-        padding-left: 38px;
+        padding-top: 1.055%;
+        padding-bottom: 1.055%;
+        padding-left: 2.969%;
         font-size: 23px;
-        width: 1200px;
+        width: 93.750%;
     }
 
     .browse_name {
         font-size: 17px;
-        padding-top: 22px;
-        padding-bottom: 14px;
-        padding-left: 29px;
-        padding-right: 39px;
+        padding-top: 1.719%;
+        padding-bottom: 1.094%;
+        padding-left: 2.266%;
+        padding-right: 3.047%;
+        width: 15.625%;
     }
 
 
 /* select like */
     .select_like_main_container {
-        margin-top: 6.8px;
-        margin-bottom: 60px;
+        margin-top: 0.531%;
+        margin-bottom: 4.688%;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -137,10 +138,10 @@
         border: 2px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
-        margin-top: 29px;
-        margin-bottom: 70px;
-        margin-left: 127px;
-        margin-right: 127px;
+        margin-top: 2.266%;
+        margin-bottom: 7.469%;
+        margin-left: 9.922%;
+        margin-right: 9.922%;
     }
 
     .select_like_main_container table a {
@@ -158,19 +159,20 @@
     }
 
     .select_like_title {
-        padding-top: 13.5px;
-        padding-bottom: 13.5px;
-        padding-left: 38px;
+        padding-top: 1.055%;
+        padding-bottom: 1.055%;
+        padding-left: 2.969%;
         font-size: 23px;
-        width: 1200px;
+        width: 93.75%;
     }
 
     .select_like_name {
         font-size: 17px;
-        padding-top: 22px;
-        padding-bottom: 14px;
-        padding-left: 29px;
-        padding-right: 39px;
+        padding-top: 1.719%;
+        padding-bottom: 1.094%;
+        padding-left: 2.266%;
+        padding-right: 3.047%;
+        /* padding-right: 3.047%; */
     }
 
     .selet_like_buttom {
@@ -182,9 +184,9 @@
         font-size: 25px;
         color: #FAFCFD;
         background-color: #DFA499;
-        padding: 10px 77px 10px 77px;
+        padding: 0.781% 6.016% 0.781% 6.016%;
         border: 1px solid #707070;
-        border-radius: 10px;
+        border-radius: 0.781%;
     }
     
 
@@ -194,26 +196,26 @@
     .browse_main_container {
         padding-left: 5%;
         padding-right: 5%;
-        margin-top: 11.7px;
-        margin-bottom: 32.1px; 
+        margin-top: 1.95%;
+        margin-bottom: 5.35%; 
     }
     /*==================================================
     スライダーのためのcss
     ===================================*/
     .slider {
-        height: 86.91px;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-        margin-bottom: 8px;
+        height: 13.652%;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        margin-bottom: 1.333%;
     }
 
     .slider-item {
         width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-        height: 86.91px;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        height: 14.485%;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
     }
 
     /*ドットナビゲーションの設定*/
 
     .slick-dots {
-        margin: -10px 0 0 0;
+        margin: -1.667% 0 0 0;
     }
 
     .browse_main_container table {
@@ -222,26 +224,26 @@
     }
 
     .browse_title {
-        padding-top: 8.3px;
-        padding-bottom: 8.3px;
-        padding-left: 17px;
+        padding-top: 1.383%;
+        padding-bottom: 1.383%;
+        padding-left: 2.833%;
         font-size: 7px;
         /* width: 306.41px; */
     }
 
     .browse_name {
         font-size: 5px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 12.3px;
-        padding-right: 6.1px;
+        padding-top: 1.333%;
+        padding-bottom: 1.333%;
+        padding-left: 2.05%;
+        padding-right: 1.017%;
     }
 
 
     /* select like------------------------ */
     .select_like_main_container {
-        margin-top: 11.7px;
-        margin-bottom: 32.1px; 
+        margin-top: 1.95%;
+        margin-bottom: 5.35%; 
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -253,30 +255,30 @@
 
     .select_like_main_container table {
         margin-top: 0px;
-        margin-bottom: 11.9px;
+        margin-bottom: 1.983%;
         margin-left: 0px;
         margin-right: 0px;
     }
 
     .select_like_title {
-        padding-top: 8.3px;
-        padding-bottom: 8.3px;
-        padding-left: 13.5px;
+        padding-top: 1.383%;
+        padding-bottom: 1.383%;
+        padding-left: 2.25%;
         font-size: 7px;
         width: 100%;
     }
 
     .select_like_name {
         font-size: 6px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 12.3px;
-        padding-right: 7.1px;
+        padding-top: 1.333%;
+        padding-bottom: 1.333%;
+        padding-left: 2.05%;
+        padding-right: 1.183%;
     }
 
     .selet_like_buttom a {
         font-size: 8px;
-        padding: 5.5px 31px 5.5px 31px;
+        padding: 0.197% 5.167% 0.197% 5.167%;
     }
 
 }
