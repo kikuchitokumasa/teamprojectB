@@ -36,6 +36,45 @@
 
     <link rel="icon" href="./img/favicon.ico">
 </head>
+<style type="text/css">
+    /*=== 画像の表示エリア ================================= */
+    .slide {
+        position   : relative;
+        overflow   : hidden;
+                            /* 画像のサイズに合わせて変更ください */
+        width      : 992.37px;
+        height     : 219.84px;
+        /* margin     : auto;      サンプルは中央寄せの背景：白 */
+        background : #FAFCFD;
+    }
+    
+    /*=== 画像の設定 ======================================= */
+    .slide img {
+        display    : block;
+        position   : absolute;
+                            /* 画像のサイズを表示エリアに合せる */
+        width      : inherit;
+        height     : inherit;
+        left       : 100%;
+        animation  : slideAnime 15s ease infinite;
+
+        object-fit: cover;
+    }
+    
+    /*=== スライドのアニメーションを段差で開始する ========= */
+    .slide img:nth-of-type(1) { animation-delay: 0s }
+    .slide img:nth-of-type(2) { animation-delay: 5s }
+    .slide img:nth-of-type(3) { animation-delay: 10s }
+    
+    /*=== スライドのアニメーション ========================= */
+    @keyframes slideAnime{
+        0% { left: 100%  }
+        4% { left: 0     }
+        29% { left: 0     }
+        33% { left: -100% }
+        100% { left: -100% }
+    }
+</style>
 
 <body>
     <header class="header1">
@@ -56,11 +95,11 @@
 
     <div class="browse_main_container">
         <div class="browse_wrapper">
-            <ul class="slider">
-                <li class="slider-item"><img src="./img/kouyou.jpg" alt="img"></li>
-                <li class="slider-item"><img src="./img/sakura.jpg" alt="img"></li>
-                <li class="slider-item"><img src="./img/wasitu.jpg" alt="img"></li>
-            </ul>
+            <div class="slide" id="makeImg">
+                <img src="img/spring_fes.png"alt="spring_fes">
+                <img src="img/spring_fes.png"alt="spring_fes">
+                <img src="img/spring_fes.png"alt="spring_fes">
+            </div>
         </div>
         
         <table>
