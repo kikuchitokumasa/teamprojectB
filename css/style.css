@@ -40,7 +40,7 @@
 
     .header1_container form {
         margin-top: 54px;
-        padding-left: 472px;
+        padding-left: 36.875%;
         display: flex;
     }
 
@@ -71,14 +71,14 @@
 
     .header1_buttom_login {
         text-decoration: none;
-        margin-top: 36px;
+        margin-top: 2.813%;
         /* margin-left: 1439px; */
         /* height: 123px;
         width: 270px; */
         background-color: #FAFCFD;
         color: #DFA499;
         font-size: 32px;
-        padding: 19px 21.5px 15px 21.5px;
+        padding: 1.484% 1.68% 1.172% 1.68%;
         border: 1px solid #707070;
         border-radius: 16px;
         text-decoration: none;
@@ -86,19 +86,18 @@
 
     .header1_buttom_logout {
         text-decoration: none;
-        margin-top: 36px;
+        margin-top: 2.813%;
         /* margin-left: 1439px; */
         /* height: 123px;
         width: 270px; */
         background-color: #FAFCFD;
         color: #DFA499;
         font-size: 32px;
-        padding: 17px 5.5px 17px 5.5px;
+        padding: 1.328% 0.43% 1.328% 0.43%;
         border: 1px solid #707070;
         border-radius: 16px;
         text-decoration: none;
     }
-
 
 /* footer */
     .footer1 {
@@ -191,7 +190,7 @@
 
     .header1_container form {
         margin-top: 12.5px;
-        padding-left: 15.4px;
+        padding-left: /*2.567%*/5.567%;
     }
 
     .header1_container input[type=text] {
@@ -205,7 +204,8 @@
     .header1_submit {
         padding-top: 0px;
         padding-left: 3.3px;
-        padding-right: 25.8px;
+        /* padding-right: 25.8px; */
+        padding-right: 5.3%;
     }
 
     .header1_container input[type=submit]{
@@ -214,17 +214,21 @@
     }
 
     .header1_buttom_login {
-        margin-top: 6px;
+        margin-top: 3%;
         font-size: 12px;
-        padding: 8.5px 13.1px 8.5px 13.1px;
-        height: 35.05px;
+        padding: 1.417% 2.183% 1.417% 2.183%;
+        height: 5.842%;
+
+        margin-left: 0.8%;
     }
 
     .header1_buttom_logout {
-        margin-top: 6px;
+        margin-top: 3%;
         font-size: 12px;
-        padding: 8.5px 7.1px 8.5px 7.1px;
-        height: 35.05px; 
+        padding: 1.417% 1.183% 1.417% 1.183%;
+        height: 5.917%; 
+
+        margin-left: 0.8%;
     }
 
 
