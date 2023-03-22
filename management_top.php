@@ -96,6 +96,7 @@
     $_SESSION["error_db"] = [];
     $_SESSION["error_user_name"] = [];
     $_SESSION["error_pw"] = [];
+
  ?>
 
 <!DOCTYPE html>
@@ -133,7 +134,7 @@
     <div class="mana_d_main_container">
         <div class="mana_d_left_container">
             <div class="mana_d_circle"><a href="confirm.php">新規投稿</a></div>
-            <p><?php echo $user_name; ?>さん</p>
+            <p><a href="profile.php"><?php echo $user_name; ?>さん</a></p>
             <img src="./img/girl.png" alt="img">
         </div>
 
