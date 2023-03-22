@@ -7,13 +7,45 @@
 
     $user_id = $_SESSION["user_id"];
     $user_name = $_SESSION["user_name"];
+
+    $_SESSION["name"] = [];
+    $_SESSION["profession"] = [];
+    $_SESSION["introduction"] = [];
+
+    /* ユーザープロフィールの作成 */
+    $sql = "SELECT * FROM profile WHERE user_id = :user_id";
+    $stm = $pdo->prepare($sql);
+    $stm->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);
+    $stm->execute();
+    $profile_result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+    if(!empty($profile_result[0]["user_id"])){
+        $_SESSION["user_id"] = $profile_result[0]["user_id"];
+    }
+    $user_id = $_SESSION["user_id"];
+
+    if(!empty($profile_result[0]["name"])){
+        $_SESSION["name"] = $profile_result[0]["name"];
+    }
+    $name = $_SESSION["name"];
+
+    if(!empty($profile_result[0]["profession"])){
+        $_SESSION["profession"] = $profile_result[0]["profession"];
+    }
+    $profession = $_SESSION["profession"];
+
+    if(!empty($profile_result[0]["introduction"])){
+        $_SESSION["introduction"] = $profile_result[0]["introduction"];
+    }
+    $introduction = $_SESSION["introduction"];
+    
 ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"ontent="IE=edge">
+    <meta name="viewport" content="width c=device-width, initial-scale=1.0">
     <title>プロフィール</title>
     <link rel="stylesheet" href="node_modules/ress/ress.css">
     <!-- reset.css ress -->
@@ -41,7 +73,14 @@
     </header>
 
     <div class="profile_main_container">
-        <h3><?php echo $user_name ?></h3>
+        <h3><?php echo $name ?></h3>
+
+        <p><?php echo $profession ?></p>
+
+        <pre><?php echo $introduction ?></pre>
+
+        <a href="management_top.php">トップページへ</a>
+
     </div>
 
 

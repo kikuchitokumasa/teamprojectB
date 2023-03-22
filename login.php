@@ -12,6 +12,26 @@
         $stm->execute();
         $login_result = $stm->fetchAll(PDO::FETCH_ASSOC);
 
+        $user_name = $_SESSION["r_user_name"];
+
+        //id 検索
+        $sql = "SELECT * FROM account WHERE user_name = :user_name";
+
+        $stm = $pdo->prepare($sql);
+        $stm->bindValue(':user_name', $user_name, PDO::PARAM_STR);
+        $stm->execute();
+        $id_result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+        $user_id = $id_result[0]["user_id"];
+
+        //profile db
+        $sql = "INSERT INTO profile (user_id,name) VALUES (:user_id,:name)";
+        $stm = $pdo->prepare($sql);
+        $stm->bindValue(':user_id', $user_id, PDO::PARAM_STR);
+        $stm->bindValue(':name', $user_name, PDO::PARAM_STR);
+        $stm->execute();
+        $profile_result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
     
         //セッションの破棄
         $_SESSION = [];
