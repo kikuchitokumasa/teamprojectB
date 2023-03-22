@@ -74,6 +74,16 @@
         33% { left: -100% }
         100% { left: -100% }
     }
+
+    /* レスポンシブ */
+    @media(max-width: 600px) {
+        /*=== 画像の表示エリア ================================= */
+        .slide {
+            /* width      : 343.51px; */
+            width      : 100%;
+            height     : 86.91px;
+        }
+    }
 </style>
 
 <body>
@@ -96,9 +106,9 @@
     <div class="browse_main_container">
         <div class="browse_wrapper">
             <div class="slide" id="makeImg">
+                <img src="img/register_account.png"alt="spring_fes">
                 <img src="img/spring_fes.png"alt="spring_fes">
-                <img src="img/spring_fes.png"alt="spring_fes">
-                <img src="img/spring_fes.png"alt="spring_fes">
+                <img src="img/summer_fes.png"alt="spring_fes">
             </div>
         </div>
         
