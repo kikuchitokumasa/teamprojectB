@@ -50,9 +50,6 @@
     }
     
 
-    echo "<pre>";
-    echo "</pre>";
-    //var_dump($count);
 
 
 

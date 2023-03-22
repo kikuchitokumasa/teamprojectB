@@ -50,9 +50,6 @@
     }
     
 
-    echo "<pre>";
-    echo "</pre>";
-    //var_dump($count);
 
 
 
@@ -72,6 +69,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">  
      
+   
     <link rel="icon" href="./img/favicon.ico">
 </head>
 <body id="browse">
