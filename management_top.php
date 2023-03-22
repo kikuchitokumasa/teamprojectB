@@ -15,14 +15,12 @@
             //pw
             $_SESSION["pw"] = htmlspecialchars($_POST["password"],ENT_QUOTES,"UTF-8");
         }
-
         $sql = "SELECT * FROM account WHERE user_name = :user_name";
 
         $stm = $pdo->prepare($sql);
         $stm->bindValue(':user_name', $_SESSION["user_name"], PDO::PARAM_STR);
         $stm->execute();
         $login_result = $stm->fetchAll(PDO::FETCH_ASSOC);
-
         //error check
 
             if($login_result === null) {
@@ -96,6 +94,7 @@
     $_SESSION["error_db"] = [];
     $_SESSION["error_user_name"] = [];
     $_SESSION["error_pw"] = [];
+    var_dump($_SESSION);
  ?>
 
 <!DOCTYPE html>
@@ -144,7 +143,7 @@
             foreach($result as $data) {
                 echo<<<"EOD"
                         <tr>
-                            <td class="mana_d_title"><a href="">{$data['title']}</a></td>
+                            <td class="mana_d_title"><a href="mana_d.php?blog_id={$data['blog_id']}">{$data['title']}</a></td>
                             <td class=""><a class="mana_d_buttom mana_d_update" href="update.php?blog_id={$data['blog_id']}">編集</a></td>
                             <td class=""><a class="mana_d_buttom mana_d_delete" href="delete.php?blog_id={$data['blog_id']}">削除</a></td>
                         </tr>

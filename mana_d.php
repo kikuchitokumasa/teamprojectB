@@ -21,7 +21,7 @@
 
     //次の記事
     //現在表示している記事のIDより大きい公開されていて削除されていない記事のIDを取得する
-    $sql = "select blog_id from blog where blog_id > :blog_id and releases = 1 and deletes = 0 LIMIT 1";
+    $sql = "select blog_id from blog where blog_id > :blog_id and deletes = 0 LIMIT 1";
     $stm = $pdo->prepare($sql);
     $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
     $stm->execute();
@@ -33,7 +33,7 @@
     
     //前の記事
     //現在表示している記事のIDより小さい公開されていて削除されていない記事のIDを取得する
-    $sql = "select blog_id from blog where blog_id < :blog_id and releases = 1 and deletes = 0  order by blog_id desc LIMIT 1";
+    $sql = "select blog_id from blog where blog_id < :blog_id  and deletes = 0  order by blog_id desc LIMIT 1";
     $stm = $pdo->prepare($sql);
     $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
     $stm->execute();
@@ -92,7 +92,7 @@
     </header>
 
     <div class="browse_d_main_container">
-        <div class="browse_wrapper">
+    <div class="browse_wrapper">
             <ul class="slider">
                 <li class="slider-item"><img src="./img/kouyou.jpg" alt="img"></li>
                 <li class="slider-item"><img src="./img/sakura.jpg" alt="img"></li>
@@ -114,7 +114,7 @@
         <div style="padding: 100px; margin-bottom: 10px; border: 1px solid #333333;">
         <div class="browse_d_main_contents">
             <div class="browse_d_article">
-                <p><h2><?php echo $result[0]["title"] ?></h2><p>
+                <h1><?php echo $result[0]["title"] ?></h1>
                 <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
                 <p>テーマ:<?php echo $result[0]["theme"] ?></p>
                 <p>本文:<?php echo $result[0]["text"] ?></p>
