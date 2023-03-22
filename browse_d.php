@@ -77,14 +77,14 @@
 <body id="browse">
     <header class="header1">
         <div class="header1_container">
-            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
+            <a href="index.php"><img src="./img/logo.png" alt=""></a>
             
             <form action="browse_selectLike.php" method="post">
                 <input type="text" name="keyword">
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom_logout" href="">ログアウト</a>
+            <a class="header1_buttom_logout" href="login.php">ログイン</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -144,8 +144,8 @@
         <div class="footer1_container">
             <a class="footer1_title" href="index.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="login.php">ログイン</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>

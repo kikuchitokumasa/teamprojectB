@@ -94,7 +94,6 @@
     $_SESSION["error_db"] = [];
     $_SESSION["error_user_name"] = [];
     $_SESSION["error_pw"] = [];
-    var_dump($_SESSION);
  ?>
 
 <!DOCTYPE html>

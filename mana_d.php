@@ -84,7 +84,7 @@
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom_logout" href="">ログアウト</a>
+            <a class="header1_buttom_logout" href="index.php">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -114,7 +114,7 @@
         <div style="padding: 100px; margin-bottom: 10px; border: 1px solid #333333;">
         <div class="browse_d_main_contents">
             <div class="browse_d_article">
-                <h1><?php echo $result[0]["title"] ?></h1>
+                <h2><?php echo $result[0]["title"] ?></h2>
                 <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
                 <p>テーマ:<?php echo $result[0]["theme"] ?></p>
                 <p>本文:<?php echo $result[0]["text"] ?></p>
@@ -144,8 +144,8 @@
         <div class="footer1_container">
             <a class="footer1_title" href="index.php">BLOG</a>
             <ul>
-                <li><a href="">新規投稿</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="confirm.php">新規投稿</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>
