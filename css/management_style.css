@@ -43,10 +43,14 @@
         object-fit: cover;
     }
 
-    .mana_d_left_container p {
+    .mana_d_left_profile {
         font-size: 32px;
         margin-top: 0;
         margin-bottom: 38px;
+    }
+
+    .mana_d_left_profile a {
+        text-decoration: none;
     }
 
     /* right container */
@@ -476,10 +480,15 @@
         object-fit: cover;
     }
 
-    .select_like_left_container p {
+    .select_like_profile {
+        text-decoration: none;
         font-size: 32px;
         margin-top: 0;
         margin-bottom: 38px;
+    }
+
+    .select_like_profile a {
+        text-decoration: none;
     }
 
     /* right container */
@@ -553,6 +562,77 @@
         border: 1px solid #707070;
         border-radius: 10px;
     }
+
+/* management profile */
+    .management_profile_main_container {
+        padding-top: 30.8px;
+        padding-bottom: 30.8px;
+    }
+
+    .management_profile_main_container h3 {
+        font-weight: normal;
+        font-size: 49px;
+        padding-left: 95px;
+    }
+
+    .management_profile_name {
+        font-weight: normal;
+        font-size: 30px;
+        padding-top: 38px;
+        padding-left: 218px;
+        padding-right: 218px;
+    }
+
+    .management_profile_main_container p {
+        font-size: 24px;
+        padding-top: 38px;
+        padding-left: 218px;
+        padding-right: 218px;
+    }
+
+    .management_profile_pre {
+        font-size: 24px;
+        font-weight: normal;
+        height: 400px;
+        margin-top: 38px;
+        margin-left: 218px;
+        margin-right: 218px;
+    }
+
+    .management_profile_pre pre {
+        white-space: pre-wrap; /*折り返し*/
+    }
+
+    .management_profile_buttom {
+        text-align: center;
+        padding-top: 51px;
+    }
+
+    .management_profile_buttom a{
+        text-decoration: none;
+        font-size: 24px;
+        color: #FAFCFD;
+        background-color: #DFA499;
+        padding: 10px 48px 10px 48px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+    }
+
+    .management_profile_buttom_top {
+        text-align: center;
+        padding-top: 51px;
+    }
+
+    .management_profile_buttom_top a{
+        text-decoration: none;
+        font-size: 24px;
+        color: #707070;
+        background-color: #FAFCFD;
+        padding: 10px 48px 10px 48px;
+        border: 3px solid #99D3DF;
+        border-radius: 10px;
+    }
+
 
 
 /* レスポンシブ */

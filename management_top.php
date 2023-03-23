@@ -134,7 +134,7 @@
     <div class="mana_d_main_container">
         <div class="mana_d_left_container">
             <div class="mana_d_circle"><a href="confirm.php">新規投稿</a></div>
-            <p><a href="profile.php"><?php echo $user_name; ?>さん</a></p>
+            <div class="mana_d_left_profile"><a href="management_profile.php"><?php echo $_SESSION["user_name"]; ?>さん</a></div>
             <img src="./img/girl.png" alt="img">
         </div>
 

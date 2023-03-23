@@ -31,11 +31,15 @@
 
     if(!empty($profile_result[0]["profession"])){
         $_SESSION["profession"] = $profile_result[0]["profession"];
+    } else {
+        $_SESSION[""] = "なし";
     }
     $profession = $_SESSION["profession"];
 
     if(!empty($profile_result[0]["introduction"])){
         $_SESSION["introduction"] = $profile_result[0]["introduction"];
+    } else {
+        $_SESSION[""] = "なし";
     }
     $introduction = $_SESSION["introduction"];
     
@@ -72,14 +76,15 @@
         </svg>
     </header>
 
-    <div class="profile_main_container">
-        <h3><?php echo $name ?></h3>
+    <div class="management_profile_main_container">
+        <h3>プロフィール</h3>
 
+        <h4 class="management_profile_name"><?php echo $name ?></h4>
         <p><?php echo $profession ?></p>
+        <div class="management_profile_pre"><pre><?php echo $introduction ?></pre></div>
 
-        <pre><?php echo $introduction ?></pre>
-
-        <a href="management_top.php">トップページへ</a>
+        <div class="management_profile_buttom"><a href="update_profile.php">編集</a></div>
+        <div class="management_profile_buttom_top"><a href="management_top.php">トップページへ</a></div>
 
     </div>
 

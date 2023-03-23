@@ -23,12 +23,15 @@
         $id_result = $stm->fetchAll(PDO::FETCH_ASSOC);
 
         $user_id = $id_result[0]["user_id"];
+        $none = "なし";
 
         //profile db
-        $sql = "INSERT INTO profile (user_id,name) VALUES (:user_id,:name)";
+        $sql = "INSERT INTO profile (user_id,name,profession,introduction) VALUES (:user_id,:name,:profession,:introduction)";
         $stm = $pdo->prepare($sql);
-        $stm->bindValue(':user_id', $user_id, PDO::PARAM_STR);
+        $stm->bindValue(':user_id', $user_id, PDO::PARAM_INT);
         $stm->bindValue(':name', $user_name, PDO::PARAM_STR);
+        $stm->bindValue(':profession', $none, PDO::PARAM_STR);
+        $stm->bindValue(':introduction', $none, PDO::PARAM_STR);
         $stm->execute();
         $profile_result = $stm->fetchAll(PDO::FETCH_ASSOC);
 
