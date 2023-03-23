@@ -19,18 +19,40 @@
     $stm->execute();
     $blog_result = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-    //次の記事　
+    //次の記事
+    //現在表示している記事のIDより大きい公開されていて削除されていない記事のIDを取得する
+    $sql = "select blog_id from blog where blog_id > :blog_id and releases = 1 and deletes = 0 LIMIT 1";
+    $stm = $pdo->prepare($sql);
+    $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
+    $stm->execute();
+    $result2 = $stm->fetch(PDO::FETCH_ASSOC);
+    if($result2 !== false){
+        $next_blog_id = $result2["blog_id"]; 
+    }
+
+    
+    //前の記事
+    //現在表示している記事のIDより小さい公開されていて削除されていない記事のIDを取得する
+    $sql = "select blog_id from blog where blog_id < :blog_id and releases = 1 and deletes = 0  order by blog_id desc LIMIT 1";
+    $stm = $pdo->prepare($sql);
+    $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
+    $stm->execute();
+    $result3 = $stm->fetch(PDO::FETCH_ASSOC);
+    if($result3 !== false){
+        $prev_blog_id = $result3["blog_id"];
+    }
+    
     $count = count($blog_result);
     for($i = 0 ; $i < $count ; $i++){
         if($blog_id+1 === $blog_result[$i]['blog_id']){
             $next_blog_id = $blog_result[$i]['blog_id'];
         }
     }
+    
 
     echo "<pre>";
-    var_dump($blog_result);
     echo "</pre>";
-    var_dump($count);
+    //var_dump($count);
 
 
 
@@ -45,7 +67,8 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/browse_style.css">
-    
+    <link rel="stylesheet" href="./css/management_style.css">
+     
     <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
@@ -66,25 +89,39 @@
     </header>
 
     <div class="browse_d_main_container">
-        <div class="browse_d_article_move">
-            <a href="browse_d.php?blog_id=<?php echo $prev_blog_id ?>">＜ 前の記事</a>
-            <a href="browse_d.php?blog_id=<?php echo $next_blog_id ?>">次の記事 ＞</a>
+        <div class="browse_success_center">
+            <br>
+            <br>
+            <?php if(isset($prev_blog_id)){?>
+                <a href="browse_d.php?blog_id=<?php echo $prev_blog_id; ?>">＜ 前の記事</a>
+            <?php } ?>
+            <?php if(isset($next_blog_id)){ ?>
+                <a href="browse_d.php?blog_id=<?php echo $next_blog_id; ?>">次の記事 ＞</a>
+            <?php } ?>
         </div>
-
+        <div style="padding: 100px; margin-bottom: 10px; border: 1px solid #333333;">
         <div class="browse_d_main_contents">
             <div class="browse_d_article">
                 <h1><?php echo $result[0]["title"] ?></h1>
                 <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
                 <p>テーマ:<?php echo $result[0]["theme"] ?></p>
-                <p><?php echo $text ?></p>
+                <p>本文:<?php echo $result[0]["text"] ?></p>
             </div>
         </div>
-
-        <div class="browse_d_article_move">
-            <a href="">＜ 前の記事</a>
-            <a href="">次の記事 ＞</a>
         </div>
-        <a href="index.php">トップページへ</a>
+
+        <div class="browse_success_center">
+            <br><br><br><br>
+        <?php if(isset($prev_blog_id)){?>
+                <a href="browse_d.php?blog_id=<?php echo $prev_blog_id; ?>">＜ 前の記事</a>
+            <?php } ?>
+            <?php if(isset($next_blog_id)){ ?>
+                <a href="browse_d.php?blog_id=<?php echo $next_blog_id; ?>">次の記事 ＞</a>
+            <?php } ?>
+        </div>
+        <div class="browse_success_center">
+            <a href="management_top.php">トップページへ</a>
+        </div>
     </div>
 
     <footer class="footer1">
