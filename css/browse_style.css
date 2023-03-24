@@ -56,10 +56,10 @@
 
 /* select like */
     .select_like_main_container {
-        margin-top: 0.531%;
-        margin-bottom: 4.688%;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 3.109%;
+        margin-bottom: 5.781%;
     }
 
     .select_like_main_container h1 {
@@ -71,10 +71,8 @@
         border: 2px solid #99D3DF;
         border-spacing: 0;
         border-radius: 10px;
-        margin-top: 2.266%;
-        margin-bottom: 7.469%;
-        margin-left: 9.922%;
-        margin-right: 9.922%;
+        margin-left: 11.016%;
+        margin-right: 11.016%;
     }
 
     .select_like_main_container table a {
@@ -96,7 +94,7 @@
         padding-bottom: 1.055%;
         padding-left: 2.969%;
         font-size: 23px;
-        width: 93.75%;
+        width: 669px;
     }
 
     .select_like_name {
@@ -105,21 +103,22 @@
         padding-bottom: 1.094%;
         padding-left: 2.266%;
         padding-right: 3.047%;
-        /* padding-right: 3.047%; */
+        width: 197px;
     }
 
     .selet_like_buttom {
         text-align: center;
+        margin-top: 22px;
     }
 
     .selet_like_buttom a {
         text-decoration: none;
-        font-size: 25px;
+        font-size: 24px;
         color: #FAFCFD;
         background-color: #DFA499;
-        padding: 0.781% 6.016% 0.781% 6.016%;
+        padding: 10px 48px 10px 48px;
         border: 1px solid #707070;
-        border-radius: 0.781%;
+        border-radius: 10px;
     }
 
     /* browse profile */
