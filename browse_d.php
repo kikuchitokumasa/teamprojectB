@@ -167,14 +167,14 @@
         <br>
         <br>
         <div style="padding: 100px; margin-bottom: 10px; border: 1px solid #333333;">
-        <div class="browse_d_main_contents">
-            <div class="browse_d_article">
-                <p><h2><?php echo $result[0]["title"] ?></h2><p>
-                <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
-                <p>テーマ:<?php echo $result[0]["theme"] ?></p>
-                <p>本文:<?php echo $result[0]["text"] ?></p>
+            <div class="browse_d_main_contents">
+                <div class="browse_d_article">
+                    <p><h2><?php echo $result[0]["title"] ?></h2><p>
+                    <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
+                    <p>テーマ:<?php echo $result[0]["theme"] ?></p>
+                    <p>本文:<?php echo $result[0]["text"] ?></p>
+                </div>
             </div>
-        </div>
         </div>
 
         <div class="browse_success_original">
