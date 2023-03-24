@@ -51,6 +51,7 @@
 
     .mana_d_left_profile a {
         text-decoration: none;
+        color: inherit;
     }
 
     /* right container */
@@ -487,6 +488,7 @@
 
     .select_like_profile a {
         text-decoration: none;
+        color: inherit;
     }
 
     /* right container */
