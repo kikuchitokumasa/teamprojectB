@@ -46,7 +46,7 @@
     
     <div class="select_like_main_container">
         <div class="select_like_left_container">
-            <div class="select_like_circle"><a href="confirm.php">新規投稿</a></div>
+        <a href="confirm.php" class="select_like_new"><div class="select_like_circle">新規投稿</div></a>
             <div class="select_like_profile"><a href="management_profile.php"><?php echo $_SESSION["user_name"]; ?>さん</a></div>
             <img src="./img/girl2.png" alt="img">
         </div>
