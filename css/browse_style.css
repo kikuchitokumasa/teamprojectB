@@ -196,6 +196,12 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    .browse_d_main_contents {
+        padding: 100px;
+        margin-bottom: 10px;
+        border: 1px solid #333333;
+    }
     
 
 /* レスポンシブ */
