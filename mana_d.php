@@ -21,7 +21,7 @@
 
     //次の記事
     //現在表示している記事のIDより大きい公開されていて削除されていない記事のIDを取得する
-    $sql = "select blog_id from blog where blog_id > :blog_id and releases = 1 and deletes = 0 LIMIT 1";
+    $sql = "select blog_id from blog where blog_id > :blog_id and deletes = 0 LIMIT 1";
     $stm = $pdo->prepare($sql);
     $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
     $stm->execute();
@@ -33,7 +33,7 @@
     
     //前の記事
     //現在表示している記事のIDより小さい公開されていて削除されていない記事のIDを取得する
-    $sql = "select blog_id from blog where blog_id < :blog_id and releases = 1 and deletes = 0  order by blog_id desc LIMIT 1";
+    $sql = "select blog_id from blog where blog_id < :blog_id  and deletes = 0  order by blog_id desc LIMIT 1";
     $stm = $pdo->prepare($sql);
     $stm->bindValue(':blog_id', $blog_id, PDO::PARAM_INT);
     $stm->execute();
@@ -69,20 +69,19 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">  
      
-   
     <link rel="icon" href="./img/favicon.ico">
 </head>
 <body id="browse">
     <header class="header1">
         <div class="header1_container">
-            <a href="index.php"><img src="./img/logo.png" alt=""></a>
+            <a href="management_top.php"><img src="./img/logo.png" alt=""></a>
             
             <form action="browse_selectLike.php" method="post">
                 <input type="text" name="keyword">
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom_logout" href="login.php">ログイン</a>
+            <a class="header1_buttom_logout" href="index.php">ログアウト</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -90,7 +89,7 @@
     </header>
 
     <div class="browse_d_main_container">
-        <div class="browse_wrapper">
+    <div class="browse_wrapper">
             <ul class="slider">
                 <li class="slider-item"><img src="./img/kouyou.jpg" alt="img"></li>
                 <li class="slider-item"><img src="./img/sakura.jpg" alt="img"></li>
@@ -112,7 +111,7 @@
         <div style="padding: 100px; margin-bottom: 10px; border: 1px solid #333333;">
         <div class="browse_d_main_contents">
             <div class="browse_d_article">
-                <p><h2><?php echo $result[0]["title"] ?></h2><p>
+                <h2><?php echo $result[0]["title"] ?></h2>
                 <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
                 <p>テーマ:<?php echo $result[0]["theme"] ?></p>
                 <p>本文:<?php echo $result[0]["text"] ?></p>
@@ -143,7 +142,7 @@
             <a class="footer1_title" href="index.php">BLOG</a>
             <ul>
                 <li><a href="confirm.php">新規投稿</a></li>
-                <li><a href="login.php">ログイン</a></li>
+                <li><a href="index.php">ログアウト</a></li>
             </ul>
         <p class="footer1_c">&copy; Bチーム</p>
         </div>

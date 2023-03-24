@@ -273,3 +273,25 @@
     }
 
 }
+#browse .browse_success_original a {
+    display: block;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+width: 25%;
+margin: auto;
+padding: 1rem 4rem;
+font-weight: bold;
+border: 2px solid #27acd9;
+color: #27acd9;
+transition: 0.5s;
+background-color: #FAFCFD;
+}
+#browse .browse_success_original a:hover {
+color: #fff;
+background: #27acd9;
+}
+.browse_success_original{
+    display: flex;
+    justify-content: center;
+    }
