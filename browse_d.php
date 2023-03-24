@@ -155,8 +155,6 @@
             </div>
         </div>
         <div class="browse_success_original">
-            <br>
-            <br>
             <?php if(isset($prev_blog_id)){?>
                 <a href="browse_d.php?blog_id=<?php echo $prev_blog_id; ?>">＜ 前の記事</a>
             <?php } ?>
@@ -164,8 +162,6 @@
                 <a href="browse_d.php?blog_id=<?php echo $next_blog_id; ?>">次の記事 ＞</a>
             <?php } ?>
         </div>
-        <br>
-        <br>
         <div class="browse_d_main_contents">
             <div class="browse_d_article">
                 <p><h2><?php echo $result[0]["title"] ?></h2><p>
@@ -176,7 +172,6 @@
         </div>
 
         <div class="browse_success_original">
-            <br><br><br><br>
         <?php if(isset($prev_blog_id)){?>
                 <a href="browse_d.php?blog_id=<?php echo $prev_blog_id; ?>">＜ 前の記事</a>
             <?php } ?>
@@ -184,8 +179,7 @@
                 <a href="browse_d.php?blog_id=<?php echo $next_blog_id; ?>">次の記事 ＞</a>
             <?php } ?>
         </div>
-        <br>
-        <div class="browse_success_original">
+        <div class="browse_success_buttom">
             <a href="index.php">トップページへ</a>
         </div>
     </div>

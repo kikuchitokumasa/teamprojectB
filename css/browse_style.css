@@ -202,7 +202,36 @@
         margin-bottom: 10px;
         border: 1px solid #333333;
     }
-    
+
+    .browse_success_original {
+        padding-bottom: 10px;
+    }
+
+    .browse_success_original a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #707070;
+        background-color: #FAFCFD;
+        padding: 10px 48px 10px 48px;
+        border: 3px solid #99D3DF;
+        border-radius: 10px;
+    }
+
+    .browse_success_buttom {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .browse_success_buttom a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #707070;
+        background-color: #FAFCFD;
+        padding: 10px 48px 10px 48px;
+        border: 3px solid #99D3DF;
+        border-radius: 10px;
+    }
+
 
 /* レスポンシブ */
 @media(max-width: 600px) {
