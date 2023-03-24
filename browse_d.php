@@ -172,7 +172,7 @@
                 <p><h2><?php echo $result[0]["title"] ?></h2><p>
                 <p>投稿者:<?php echo $result[0]["user_name"] ?></p>
                 <p>テーマ:<?php echo $result[0]["theme"] ?></p>
-                <p>本文:<?php echo $result[0]["text"] ?></p>
+                <pre>本文:<?php echo $result[0]["text"] ?></pre>
             </div>
         </div>
         </div>
