@@ -52,8 +52,8 @@
 		<tr>
 			<th class="post_upper">公開設定</th>
 			<td class="post_release">
+    		<label><input class="post_radio" type="radio" name="release" value="1" checked>公開</label>
 			<label><input class="post_radio" type="radio" name="release" value="0">非公開</label>
-    		<label><input class="post_radio" type="radio" name="release" value="1">公開</label>
 			</td>
 		</tr>
 	</table>
