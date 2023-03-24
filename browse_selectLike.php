@@ -50,8 +50,8 @@
             foreach($result as $data) {
                 echo<<<"EOD"
                     <tr>
-                        <td class="select_like_title"><a href="">{$data['title']}</a></td>
-                        <td class="select_like_name"><a href="">{$data['user_name']}</a></td>
+                        <td class="select_like_title"><a href="browse_d.php?blog_id={$data['blog_id']}">{$data['title']}</a></td>
+                        <td class="select_like_name"><a href="browse_d.php?blog_id={$data['blog_id']}">{$data['user_name']}</a></td>
                     </tr>
                 EOD;
             }    

@@ -60,11 +60,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>検索結果</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/browse_style.css">
-    <link rel="stylesheet" href="./css/management_style.css">
+    <!-- <link rel="stylesheet" href="./css/management_style.css"> -->
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">  
@@ -72,6 +72,56 @@
    
     <link rel="icon" href="./img/favicon.ico">
 </head>
+<style type="text/css">
+    /*=== 画像の表示エリア ================================= */
+    .slide {
+        position   : relative;
+        overflow   : hidden;
+                            /* 画像のサイズに合わせて変更ください */
+        width      : 992.37px;
+        height     : 219.84px;
+        /* margin     : auto;      サンプルは中央寄せの背景：白 */
+        background : #FAFCFD;
+    }
+    
+    /*=== 画像の設定 ======================================= */
+    .slide img {
+        display    : block;
+        position   : absolute;
+                            /* 画像のサイズを表示エリアに合せる */
+        width      : inherit;
+        height     : inherit;
+        left       : 100%;
+        animation  : slideAnime 15s ease infinite;
+
+        object-fit: cover;
+    }
+    
+    /*=== スライドのアニメーションを段差で開始する ========= */
+    .slide img:nth-of-type(1) { animation-delay: 0s }
+    .slide img:nth-of-type(2) { animation-delay: 5s }
+    .slide img:nth-of-type(3) { animation-delay: 10s }
+    
+    /*=== スライドのアニメーション ========================= */
+    @keyframes slideAnime{
+        0% { left: 100%  }
+        4% { left: 0     }
+        29% { left: 0     }
+        33% { left: -100% }
+        100% { left: -100% }
+    }
+
+    /* レスポンシブ */
+    @media(max-width: 600px) {
+        /*=== 画像の表示エリア ================================= */
+        .slide {
+            /* width      : 343.51px; */
+            width      : 100%;
+            height     : 86.91px;
+        }
+    }
+</style>
+
 <body id="browse">
     <header class="header1">
         <div class="header1_container">
@@ -82,7 +132,7 @@
                 <div class="header1_submit"><input type="submit" value="検索"></div>
             </form>
 
-            <a class="header1_buttom_logout" href="login.php">ログイン</a>
+            <a class="header1_buttom_login" href="login.php">ログイン</a>
         </div>
         <svg class="header1_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,0 100,100 0,100"/>
@@ -90,12 +140,19 @@
     </header>
 
     <div class="browse_d_main_container">
-        <div class="browse_wrapper">
+        <!-- <div class="browse_wrapper">
             <ul class="slider">
                 <li class="slider-item"><img src="./img/kouyou.jpg" alt="img"></li>
                 <li class="slider-item"><img src="./img/sakura.jpg" alt="img"></li>
                 <li class="slider-item"><img src="./img/wasitu.jpg" alt="img"></li>
             </ul>
+        </div> -->
+        <div class="browse_wrapper">
+            <div class="slide" id="makeImg">
+                <img src="img/register_account.png"alt="spring_fes">
+                <img src="img/spring_fes.png"alt="spring_fes">
+                <img src="img/summer_fes.png"alt="spring_fes">
+            </div>
         </div>
         <div class="browse_success_original">
             <br>
